@@ -215,14 +215,14 @@
 	.scrollTop{
 		top:50vh;
 		right:10px;
-		@media(max-width:580px){
+		@media(max-width:667px){
 			top:80vh;
 		}
 	}
 	.scrollBottom{
 		top:40vh;
 		right:10px;
-		@media(max-width:550px){
+		@media(max-width:667px){
 			top:10vh;
 		}
 	}
