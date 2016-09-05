@@ -201,26 +201,26 @@
 		text-transform: uppercase;
 		padding: 5px 15px;
 		z-index:999;
-		@media(max-width:350px){
+		@media(max-width:480px){
 			background: transparent;
 			box-shadow:none;
 		}
 		.fa{
 			display: inline-block;
-			@media(max-width:350px){
+			@media(max-width:480px){
 				font-size:40px;
 			}
 		}
 	}
 	.scrollTop{
-		top:50vh;
+		top:50%;
 		right:10px;
 		@media(max-width:667px){
 			top:80%;
 		}
 	}
 	.scrollBottom{
-		top:40vh;
+		top:38%;
 		right:10px;
 		@media(max-width:667px){
 			top:10%;

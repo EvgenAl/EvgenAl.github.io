@@ -450,7 +450,7 @@ nav .navbar-nav li .active {
   padding: 5px 15px;
   z-index: 999;
 }
-@media (max-width: 350px) {
+@media (max-width: 480px) {
   .vehichles .scroll {
     background: transparent;
     box-shadow: none;
@@ -459,13 +459,13 @@ nav .navbar-nav li .active {
 .vehichles .scroll .fa {
   display: inline-block;
 }
-@media (max-width: 350px) {
+@media (max-width: 480px) {
   .vehichles .scroll .fa {
     font-size: 40px;
   }
 }
 .vehichles .scrollTop {
-  top: 50vh;
+  top: 50%;
   right: 10px;
 }
 @media (max-width: 667px) {
@@ -474,7 +474,7 @@ nav .navbar-nav li .active {
   }
 }
 .vehichles .scrollBottom {
-  top: 40vh;
+  top: 38%;
   right: 10px;
 }
 @media (max-width: 667px) {
