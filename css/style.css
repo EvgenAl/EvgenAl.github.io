@@ -449,22 +449,20 @@ nav .navbar-nav li .active {
   text-transform: uppercase;
   padding: 5px 15px;
   z-index: 999;
-  /*
-  @media(max-width:550px){
-  	width: 40px;
-  	height: 40px;
-  	border-radius:40px;
+}
+@media (max-width: 320px) {
+  .vehichles .scroll {
+    box-shadow: none;
   }
-  */
 }
 .vehichles .scroll .fa {
   display: inline-block;
 }
 .vehichles .scrollTop {
-  top: 60vh;
+  top: 50vh;
   right: 10px;
 }
-@media (max-width: 550px) {
+@media (max-width: 580px) {
   .vehichles .scrollTop {
     top: 80vh;
   }
@@ -475,7 +473,7 @@ nav .navbar-nav li .active {
 }
 @media (max-width: 550px) {
   .vehichles .scrollBottom {
-    top: 20vh;
+    top: 10vh;
   }
 }
 
