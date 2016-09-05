@@ -468,18 +468,18 @@ nav .navbar-nav li .active {
   top: 50vh;
   right: 10px;
 }
-@media (max-width: 580px) {
+@media (max-width: 667px) {
   .vehichles .scrollTop {
-    top: 80vh;
+    top: 80%;
   }
 }
 .vehichles .scrollBottom {
   top: 40vh;
   right: 10px;
 }
-@media (max-width: 550px) {
+@media (max-width: 667px) {
   .vehichles .scrollBottom {
-    top: 10vh;
+    top: 10%;
   }
 }
 
