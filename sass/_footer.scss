@@ -1,0 +1,140 @@
+footer{
+	background: url(../img/audi.png) no-repeat 0 60%;
+	.wrapper{
+		max-width:1030px;
+		margin: 0 auto;
+	}
+	.footer_top{
+		.wrapper{
+			border-bottom: 1px solid  #cfd8dc;
+			padding: 60px 0;
+			@media(max-width:380px){
+				padding:0;				
+			}
+		}
+		.item{
+			@media(max-width:380px){
+				width: 100%;
+				text-align: center;
+			}
+		}
+		.address, .support{
+			@media(max-width:380px){
+				display: none;
+			}
+		}
+		h3{
+			margin-top: 0;
+			color: #546e7a;
+			font-size: 21px;
+			font-weight: 500;
+			line-height: 42px;
+		}
+		ul{
+			padding: 0;
+		}
+		li{
+			list-style:none;
+			a{
+				color: #90a4ae;
+				font-size: 15px;
+				font-weight: 400;
+				line-height: 31px;
+				transition:all .3s ease-out;
+				&:hover{
+					color:$background;
+					font-weight: 500;
+				}
+			}
+		}
+		address{
+			color: #90a4ae;
+			font-size: 15px;
+			line-height: 32px;
+			a{
+				color: #90a4ae;
+				font-size: 15px;
+				line-height: 31px;
+			}
+		}
+		.subscribe{
+			color: #a5b3b9;
+			font-size: 15px;
+			font-weight: 500;
+			line-height: 30px;
+			margin-top: 5px;
+		}
+		.form-control{
+			color: #b0bec4;
+			font-size: 17px;
+			border:none;
+			background-color: #f0f1f3;
+			border-radius: 3px;
+			padding: 20px;
+			height: auto;
+			&:focus{
+				box-shadow:none;
+			}
+		}
+		.input-group-addon{
+			background-color: #00bfe8;
+			cursor:pointer;
+			padding: 0 20px;
+			.fa{
+				color:#fff;
+				font-size: 21px;
+				font-weight: 400;
+				line-height: 35px;
+				text-transform: uppercase;
+			}
+		}
+		.links{
+			margin-top: 20px;
+			@media(max-width:380px){
+				text-align: center;
+			}
+			li{
+				float:left;
+				@media(max-width:380px){
+					float:none;
+				}
+				a{
+					color: #a8b6bc;
+					font-size: 21px;
+					font-weight: 400;
+					line-height: 35px;
+					display: inline-block;
+					padding: 0 15px;
+					transition:all ease-out .4s;
+					&:hover{
+						text-shadow: 0 8px 15px rgba(38, 50, 56, 0.4), 0 0 5px rgba(0, 0, 0, 0.03);
+						color: $background;
+					}
+					@media(max-width:380px){
+						padding:0 10px;
+					}
+				}
+				&:first-child{
+					margin-left: 35px;
+					@media(max-width:380px){
+						margin-left: 0;
+					}
+				}
+			}
+		}
+	}
+	.footer_bottom{
+		p{
+			text-align: center;
+			margin: 30px 0;
+			font-family: "Myriad Pro";
+			font-size: 17px;
+			font-weight: 400;
+			color: #90a4ae;
+			span{
+				text-transform: uppercase;
+				color:$background;
+			}
+		}
+	}
+}
