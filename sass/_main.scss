@@ -193,7 +193,7 @@
 		height: 52px;
 		background-color: white;
 		box-shadow: 0 3px 3px rgba(0, 0, 0, 0.08), 0 0 5px rgba(0, 0, 0, 0.07);
-		border-radius:51px;
+		border-radius:52px;
 		position: fixed;
 		color: #b0bec5;
 		font-size: 29px;
@@ -201,17 +201,30 @@
 		text-transform: uppercase;
 		padding: 5px 15px;
 		z-index:999;
+		/*
+		@media(max-width:550px){
+			width: 40px;
+			height: 40px;
+			border-radius:40px;
+		}
+		*/
 		.fa{
 			display: inline-block;
 		}
 	}
 	.scrollTop{
-	top:60vh;
-	right:10px;
+		top:60vh;
+		right:10px;
+		@media(max-width:550px){
+			top:80vh;
+		}
 	}
 	.scrollBottom{
-	top:40vh;
-	right:10px;
+		top:40vh;
+		right:10px;
+		@media(max-width:550px){
+			top:5vh;
+		}
 	}
 }
 
