@@ -188,7 +188,7 @@
 		}
 	}
 	.scroll{
-		display: block;
+		display: inline-block;
 		width: 52px;
 		height: 52px;
 		background-color: white;
@@ -201,11 +201,15 @@
 		text-transform: uppercase;
 		padding: 5px 15px;
 		z-index:999;
-		@media(max-width:320px){
+		@media(max-width:350px){
+			background: transparent;
 			box-shadow:none;
 		}
 		.fa{
 			display: inline-block;
+			@media(max-width:350px){
+				font-size:40px;
+			}
 		}
 	}
 	.scrollTop{
