@@ -1,0 +1,104 @@
+.menu{
+	padding: 20px;
+	background: $background;
+	.logo{
+		float:left;
+		margin-top: 10px;
+		width: 50%;
+		@media(max-width:400px){
+			width: 60%;
+		}
+	}
+	.items{
+		width: 20%;
+		float:right;
+		cursor: pointer;
+		margin-top: 10px;
+		p:first-child{
+			margin: 8px;
+		}
+		p:last-child{
+			margin: 0 8px 8px 8px;
+		}
+		@media(max-width:360px){
+			margin-top: 5px;
+		}
+	}
+}
+
+.banner{
+	padding:60px 20px 17px 20px;
+	@media(max-width:400px){
+		padding:50px 0 20px 0;
+	}
+	h1{
+		color: black;
+		font-family: Lasco;
+		font-size: 30px;
+		font-weight: 700;
+		text-transform: uppercase;
+		@media(max-width:479px){
+			font-size:25px;
+			margin-bottom: 30px;
+		}
+		@media(max-width:410px){
+			font-size:18px;
+			margin-bottom: 25px;
+		}
+	}
+	p{
+		color: black;
+		font-family: Roboto;
+		font-size: 17px;
+		font-weight: 300;
+		@media(max-width:410px){
+			font-size:14px;
+			padding: 0 10px;
+		}
+	}
+
+	.btn{
+		text-shadow: 0 0 9px white;
+		color: #224784;
+		font-family: Lasco;
+		font-size: 18px;
+		font-weight: 700;
+		border: none;
+		display: inline-block;
+		margin-top: 50px;
+		padding: 25px 22px;
+		cursor:pointer;
+		background: url(../img/button_top.png) no-repeat;
+		@media(max-width:479px){
+			background: url(../img/button_top_small.png) no-repeat;
+			font-size: 12px;
+			padding: 20px 22px;
+		}
+	}
+
+	.colnsult{
+		font-family: Roboto;
+		font-size: 18px;
+		font-weight: 300;
+		text-transform: lowercase;
+		color:$background;
+		@media(max-width:479px){
+			font-size: 14px;
+		}
+	}
+
+	.tel{
+		color: #224784;
+		font-family: Roboto;
+		font-size: 21px;
+		font-weight: 300;
+		@media(max-width:479px){
+			font-size: 18px;
+		}
+	}
+
+	.arrow_bottom{
+		display: inline-block;
+		margin-top: 30px;
+	}
+}

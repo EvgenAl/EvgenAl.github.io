@@ -1,0 +1,90 @@
+/*=====================COMMON STYLES======================*/
+
+*{
+	box-sizing:border-box;
+}
+
+body{
+	font-family: $font-family;
+	min-width:320px;
+}
+
+section{
+	position: relative;
+}
+
+
+h2{
+	font-family: Lasco;
+	font-size: 27px;
+	font-weight: 700;
+	@media(max-width:479px){
+		font-size: 22px;
+	}
+}
+
+h3{
+	font-family: Lasco;
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+			@media(max-width:479px){
+			font-size: 15px;
+		}
+}
+
+p{
+	color: #535353;
+	font-family: Roboto;
+	font-size: 14px;
+	font-weight: 300;
+}
+
+a{
+	text-decoration: none;
+	&:hover{
+		text-decoration: none;
+	}
+}
+
+.cliarfix:before,
+.cliarfix:after {
+	content: "";
+	display: table;
+}
+
+.cliarfix:after {
+	clear: both;
+}
+
+.cliarfix {
+	clear: both;
+}
+
+
+button, 
+button:active, 
+button:focus,
+input:focus {
+	outline: none;
+}
+
+.wrapper{
+	max-width: 480px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.list{
+	text-align: left;
+	color: #535353;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 25px;
+	padding-left: 0;
+}
+
+.img_responsive{
+	width: 100%;
+	height: auto;
+}
