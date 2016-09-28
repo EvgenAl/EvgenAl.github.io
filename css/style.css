@@ -483,10 +483,6 @@ input:focus {
   }
 }
 
-header {
-  height: 100vh;
-}
-
 .nav {
   background: #051f4c;
   padding: 0 25px;
