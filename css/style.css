@@ -509,7 +509,12 @@ header {
 }
 
 .banner {
-  padding: 90px 55px 25px 55px;
+  padding: 12vh 8vh 12vh 8vh;
+}
+@media (max-width: 460px) {
+  .banner {
+    padding: 12vh 6vh 10vh 6vh;
+  }
 }
 .banner h1 {
   color: white;
@@ -536,7 +541,7 @@ header {
   font-size: 18px;
   font-weight: 500;
   text-transform: uppercase;
-  margin: 55px 0;
+  margin: 9vh 0;
   border: 2px solid #fff;
   padding: 30px 20px;
 }
@@ -544,7 +549,6 @@ header {
   .banner .btn {
     padding: 25px 15px;
     font-size: 14px;
-    margin: 40px 0;
   }
 }
 @media (max-width: 380px) {
@@ -558,13 +562,22 @@ header {
     font-size: 10px;
   }
 }
+@media (max-width: 330px) {
+  .banner .btn {
+    margin: 7vh 0;
+  }
+}
 .banner .info {
   color: white;
   font-family: Roboto;
   font-size: 12px;
   font-weight: 300;
   line-height: 18px;
-  margin-bottom: 50px;
+  margin-bottom: 10vh;
+}
+.banner .arrow_bottom {
+  margin-top: 3vh;
+  display: inline-block;
 }
 
 .select_package {
