@@ -483,6 +483,12 @@ input:focus {
   }
 }
 
+header {
+  height: 100vh;
+  background: url(../img/header_bg.png) no-repeat;
+  background-size: cover;
+}
+
 .nav {
   background: #051f4c;
   padding: 0 25px;
@@ -503,8 +509,6 @@ input:focus {
 }
 
 .banner {
-  background: url(../img/header_bg.png) no-repeat;
-  background-size: cover;
   padding: 90px 55px 25px 55px;
 }
 .banner h1 {
