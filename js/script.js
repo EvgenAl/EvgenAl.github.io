@@ -1,10 +1,4 @@
 $(function(){
-	$('.bxslider').bxSlider({
-		infiniteLoop: false,
-		hideControlOnEnd: true,
-		startSlide:1
-	});
-
 	var answers = $('.faq .answer'),
 	questions = $('.faq .question');
 
@@ -22,4 +16,4 @@ $(function(){
 			$(this).removeClass('arrow_top');;
 		}
 	});
-});
+})
