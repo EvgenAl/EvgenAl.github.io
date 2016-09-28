@@ -492,14 +492,15 @@ header {
 .nav {
   background: #051f4c;
   padding: 0 25px;
+  height: 15vh;
 }
 .nav .logo {
   float: left;
-  padding-top: 30px;
+  padding-top: 4vh;
 }
 .nav .items {
   float: right;
-  padding: 33px 0;
+  padding: 4vh 0;
 }
 .nav .items p:first-child {
   margin: 0 0 5px 0;
@@ -509,11 +510,12 @@ header {
 }
 
 .banner {
+  height: 85vh;
   padding: 12vh 8vh 12vh 8vh;
 }
 @media (max-width: 460px) {
   .banner {
-    padding: 12vh 6vh 10vh 6vh;
+    padding: 10vh 6vh 10vh 6vh;
   }
 }
 .banner h1 {
@@ -562,18 +564,13 @@ header {
     font-size: 10px;
   }
 }
-@media (max-width: 330px) {
-  .banner .btn {
-    margin: 7vh 0;
-  }
-}
 .banner .info {
   color: white;
   font-family: Roboto;
   font-size: 12px;
   font-weight: 300;
   line-height: 18px;
-  margin-bottom: 10vh;
+  margin-bottom: 12vh;
 }
 .banner .arrow_bottom {
   margin-top: 3vh;
