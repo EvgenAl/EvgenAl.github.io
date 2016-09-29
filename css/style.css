@@ -410,7 +410,6 @@ textarea {
 }
 
 body {
-  min-width: 310px;
   font-family: Roboto;
 }
 
@@ -496,11 +495,11 @@ header {
 }
 .nav .logo {
   float: left;
-  padding-top: 5%;
+  padding-top: 4vh;
 }
 .nav .items {
   float: right;
-  padding: 5% 0;
+  padding: 4vh 0;
 }
 .nav .items p:first-child {
   margin: 0 0 5px 0;
@@ -584,6 +583,11 @@ header {
 @media (max-width: 375px) {
   .banner .arrow_bottom {
     margin-top: 4vh;
+  }
+}
+@media (max-width: 325px) {
+  .banner .arrow_bottom {
+    margin-top: 2vh;
   }
 }
 
