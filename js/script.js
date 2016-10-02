@@ -1,4 +1,7 @@
 $(function(){
+
+	//FAQ
+
 	var answers = $('.faq .answer'),
 	questions = $('.faq .question');
 
@@ -16,4 +19,9 @@ $(function(){
 			$(this).removeClass('arrow_top');;
 		}
 	});
+
+var win_h = $(window).height();
+if(win_h < 640){
+	$('.nav .logo, .nav .items').css({'padding-top':'3vh'});
+}
 })
