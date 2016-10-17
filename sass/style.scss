@@ -1,6 +1,7 @@
-@import 'normalize';
-@import 'common';
-@import 'header';
-@import 'main';
-@import 'footer';
+@import '_variables';
+@import '_mixins';
+@import '_common';
+@import '_header';
+@import '_main';
+@import '_footer';
 

@@ -1,27 +1,95 @@
 $(function(){
 
-	//FAQ
+//ProgressBar
 
-	var answers = $('.faq .answer'),
-	questions = $('.faq .question');
-
-	$('.faq .question').click(function(){
-		var answer = $(this).next('.answer');
-		if(answer.is(':hidden')){
-			answers.slideUp(1000);
-			answer.slideDown(1000);
-			questions.removeClass('arrow_top');
-			$(this).addClass('arrow_top');
-
-		}
-		else{
-			answer.slideUp(1000);
-			$(this).removeClass('arrow_top');;
-		}
-	});
-
-var win_h = $(window).height();
-if(win_h < 640){
-	$('.nav .logo, .nav .items').css({'padding-top':'3vh'});
-}
+$('.marketing #indicatorContainer').radialIndicator({
+	radius: 70,
+	barColor: '#fff',
+	barWidth: 5,
+	barBgColor: 'transparent',
+	fontSize: 17,
+	initValue: 85,
+	roundCorner : true,
+	fontWeight: 'normal',
+	percentage: true
 })
+
+$('.research #indicatorContainer').radialIndicator({
+	radius: 70,
+	barColor: '#fff',
+	barWidth: 5,
+	barBgColor: 'transparent',
+	fontSize: 17,
+	initValue: 75,
+	roundCorner : true,
+	fontWeight: 'normal',
+	percentage: true
+})
+
+$('.management #indicatorContainer').radialIndicator({
+	radius: 70,
+	barColor: '#fff',
+	barWidth: 5,
+	barBgColor: 'transparent',
+	fontSize: 17,
+	initValue: 90,
+	roundCorner : true,
+	fontWeight: 'normal',
+	percentage: true
+})
+
+$('.consultancy #indicatorContainer').radialIndicator({
+	radius: 70,
+	barColor: '#fff',
+	barWidth: 5,
+	barBgColor: 'transparent',
+	fontSize: 17,
+	initValue: 70,
+	roundCorner : true,
+	fontWeight: 'normal',
+	percentage: true
+})
+
+$('.promotion #indicatorContainer').radialIndicator({
+	radius: 70,
+	barColor: 'white',
+	barWidth: 5,
+	barBgColor: 'transparent',
+	fontSize: 17,
+	initValue: 88,
+	roundCorner : true,
+	fontWeight: 'normal',
+	percentage: true
+})
+
+
+//Animation for Portfolio
+
+$('.paperClips').hide();
+$('.port').hover(
+	function(){
+		$(this).children('.paperClips').stop().fadeIn(1200);
+	},
+	function(){
+		$(this).children('.paperClips').stop().fadeOut(1200);
+	}
+	);
+
+
+//BXslider
+
+$('.bxslider').bxSlider();
+
+//Navbar
+
+$('.header').stickyNavbar();
+
+
+
+//WoW
+
+new WOW().init();
+
+
+
+});

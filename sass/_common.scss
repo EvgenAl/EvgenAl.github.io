@@ -1,36 +1,77 @@
-/*=====================COMMON STYLES======================*/
 
-*{
-	box-sizing:border-box;
+@font-face{
+	@include Font('fontawesome-webfont');
 }
 
 body{
-	min-width: 320px;
-	font-family: Roboto;
-}
-
-.wrapper{
-	max-width: 480px;
-	margin: 0 auto;
-	text-align: center;
+	margin:0;
+	min-width: 360px;
+	font-family:$font-family;
 }
 
 section{
 	position: relative;
+	padding:90px 0;
+}
+
+a{
+	text-decoration: none;
+}
+p{
+	margin: 0;
+}
+ul{
+	padding: 0;
+	margin: 0;
+	li{
+		float: left;
+		list-style: none;
+	}
+}
+
+h2{
+	margin: 0;
+	color: #7b6c63;
+	font-size: 40px;
+	font-weight: 600;
+	line-height: 48px;
+	text-transform: uppercase;
+	padding-bottom:40px;
+	background: url(../img/h2_bottom_line.png) no-repeat 50% 100%;
+}
+.section_head{
+	text-align: center;
+	p{
+		color: #212121;
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 30px;
+		margin: 30px 0 90px 0;
+	}
+}
+
+h3{
+	color: #7b6c63;
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 30px;
+	text-transform: uppercase;
 }
 
 
-h2{
-	color: #00225d;
-	font-size: 30px;
-	font-weight: 700;
+h4{
+	color: #363636;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 30px;
 	text-transform: uppercase;
-	@media(max-width:460px){
-		font-size: 25px;
-	}
-	@media(max-width:360px){
-		font-size: 22px;
-	}
+}
+
+h5{
+	color: #212121;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 30px;
 }
 
 a{
@@ -38,6 +79,12 @@ a{
 	&:hover{
 		text-decoration: none;
 	}
+}
+
+.link{
+	color: #29c5f2;
+	font-size: 16px;
+	font-weight: 300;
 }
 
 .cliarfix:before,
@@ -54,21 +101,42 @@ a{
 	clear: both;
 }
 
-.img_responsive{
+.img-responsive{
 	width:100%;
 	height: auto;
 }
 
-button, 
-button:active, 
-button:focus,
-input:focus {
-	outline: none;
+.active{
+	border-bottom: 5px solid #7b6c63;
+	@media(max-width:768px){
+		border:none;
+	}
 }
 
-.arrow_top{
-	background: #ebeaea url(../img/arrow_top.png) no-repeat 95% 50% !important;
-	@media(max-width:420px){
-		background: #ebeaea url(../img/arrow_top_small.png) no-repeat 95% 50% !important;
+
+.form{
+	border:none;
+	border-top:4px solid #242424;
+	border-radius:0;
+	background: transparent;
+	padding: 20px;
+	float:left;
+	margin-bottom: 20px;
+	color: #5b5b5b;
+	font-family: OpenSans;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 25px;
+}
+
+.fixed {
+	position:fixed;
+	top:0;
+	left:0;
+	height: 85px;
+	width: 100%;
+	z-index:999;
+	@media(max-width:767px){
+		height: auto;
 	}
 }
