@@ -1,18 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-	<title>Mairala</title>
-	<!-- Bootstrap -->
-	<link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600,700' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link href="css/bootstrap.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<title>Адвокат по семейному праву</title>
 	<link href="css/style.css" rel="stylesheet">
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -23,493 +15,194 @@
     </head>
     <body>
     	<header>
-    		<nav class='navigation header'>
-    			<div class="container">
-    				<div class="navbar-header">
-    					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-    						<i class="fa fa-bars" aria-hidden="true"></i>
-    					</button>
-    					<h1><a href="#"><img src="img/logo.png" alt="logo"></a></h1>
+    		<div class="top_header">
+    			<div class="container cliarfix">
+    				<div class="logo">
+    					<a href="#" class='brand'>
+    						<span class='logo_img'><img src="img/logo.png" alt="logo" class='first_logo'></span><br>
+    						<span class='name_company'>lawyer company</span>
+    					</a>
     				</div>
-    				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-    					<ul class="nav navbar-nav navbar-right">
-    						<li><a href="#banner" class='active'>Home</a></li>
-    						<li><a href="#sect_about_us">About </a></li>
-    						<li><a href="#sect_projects">Portfolios</a></li>
-    						<li><a href="#sect_our_team">Team </a></li>
-    						<li><a href="#sect_our_blog">Blog</a></li>
-    						<li><a href="#sect_contact">Contact</a></li>
-    					</ul>
+    				<div class="consultation">
+    					<img src="img/phone_icon.png" alt="phone" class='icon'>
+    					<div class="content_block">
+    						<p class='phone'>+7 024 840 38 22</p>
+    						<p class="get_advice">Получить консультацию</p>
+    					</div>
     				</div>
     			</div>
-    		</nav>
-    		<div class="banner scrollto"  id='banner'>
-    			<div class="wrap">
+    		</div>
+    		<div class="banner">
+    			<div class="overlay">
     				<div class="container">
-    					<div class="text">
-    						<p><span class='grab'>grab tour copy of</span><br>
-    							The <span class='forColor'>Premium</span> Quality <br> PSD Template For <span class='forColor'>free</span>
-    						</p>
-    						<a href="#" class="button">download<i class="fa fa-download" aria-hidden="true"></i></a>
+    					<h1>
+    						Адвокат по семейному праву
+    					</h1>
+    					<p class='description'>
+    						Первая консультация по телефону <br> <span>без обязательств</span>
+    					</p>
+    					<ul class="list">
+    						<li>Расторжение брака(развод)</li>
+    						<li>Развод с иностранцем</li>
+    						<li>Раздел общего имущества с супругом</li>
+    						<li>Брачные договора</li>
+    						<li>Представление в судах Израиля</li>
+    						<li>Составление завещания</li>
+    						<li>Алименты (уменьшьшение/увеличение)</li>
+    						<li>Лишение родительских прав</li>
+    					</ul>
+    					<div class="form">
+    						<form action="#" method='post'>
+    							<p class='header'>Получите консультацию <br><span>без обязательств</span></p>
+    							<input type="text" placeholder='Ваше имя'><br>
+    							<input type="tel" placeholder='Телефон'><br>
+    							<input type="submit" value="Отправить" class='btn'>
+    						</form>
     					</div>
     				</div>
     			</div>
     		</div>
     	</header>
     	<main>
-    		<section class="about_us scrollto" id='sect_about_us'>
-    			<div class="section_head wow bounceInDown" data-wow-delay='.5s'>
-    				<div class="container">
-    					<div class="row">
-    						<div class="col-md-6 col-md-offset-3">
-    							<h2>Know About Us</h2>
-    							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam aut eius illum.</p>
-    						</div>
-    					</div>
-    				</div>
-    			</div>
-    			<section class="we_are_best wow fadeInLeft" data-wow-delay='1s' data-wow-duration='2s'>
-    				<div class="wrap">
-    					<div class="container">
-    						<div class="row">
-    							<div class="col-sm-12 col-md-12 col-lg-6">
-    								<h3>We are the best</h3>
-    								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita consectetur sapiente illum voluptas inventore in reiciendis, vero, id aliquid, delectus labore quod optio soluta quo aliquam nostrum quas obcaecati veniam!</p>
-    								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur distinctio molestias labore possimus aliquam harum ad culpa, reiciendis quisquam quia nobis repellendus aliquid ratione ipsam assumenda earum explicabo at id. Nam officia cumque dolores, odio ad obcaecati laborum deleniti nemo rem, eveniet, id doloremque voluptatum reprehenderit temporibus dicta excepturi vitae.</p>
-    								<a href="#" class="button">read more<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-    							</div>
-    						</div>
-    					</div>
-    				</div>
-    			</section>
-    			<section class="we_provide">
-    				<div class="container">
-    					<div class="row">
-    						<div class="col-md-10 col-md-offset-1 section_top wow bounceInDown" data-wow-delay='.5s'>
-    							<h3>Services we prowide</h3>
-    							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, voluptas a aperiam autem fuga quod fugit ipsam deserunt explicabo minima, ad perferendis, quibusdam dolor esse possimus! Laudantium consequuntur eveniet, modi! c Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi quisquam, aspernatur, dicta eveniet voluptate consequatur.</p>
-    						</div>
-    						<div class="col-md-4 item wow fadeInUp" data-wow-delay='.7s'>
-    							<i class="fa fa-users" aria-hidden="true"></i>
-    							<h4>ConsulTancy</h4>
-    							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit recusandae suscipit numquam eveniet inventore ullam eius, quos commodi vero iusto possimus iure reiciendis alias ipsum modi vitae, doloremque, quisquam et.</p>
-    						</div>
-    						<div class="col-md-4 item wow fadeInUp" data-wow-delay='.9s'>
-    							<i class="fa fa-bullhorn" aria-hidden="true"></i>
-    							<h4>Maketing</h4>
-    							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit recusandae suscipit numquam eveniet inventore ullam eius, quos commodi vero iusto possimus iure reiciendis alias ipsum modi vitae, doloremque, quisquam et.</p>
-    						</div>
-    						<div class="col-md-4 item wow fadeInUp" data-wow-delay='1.1s'>
-    							<i class="fa fa-flask" aria-hidden="true"></i>
-    							<h4>Reaserch</h4>
-    							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit recusandae suscipit numquam eveniet inventore ullam eius, quos commodi vero iusto possimus iure reiciendis alias ipsum modi vitae, doloremque, quisquam et.</p>
-    						</div>
-    					</div>
-    				</div>
-    			</section>
-    			<section class="our_skills">
-    				<div class="wrapper">
-    					<div class="container cliarfix">
-    						<h3>Our Skills</h3>
-    						<div class="item_for_progress wow flipOutX" data-wow-delay='.3s'>
-    							<div class="containerWrap marketing">
-    								<div id="indicatorContainer"></div>   														
-    							</div>
-    							<p>Marketing</p>	
-    						</div>
-    						<div class="item_for_progress wow flipOutX" data-wow-delay='.5s'>
-    							<div class="containerWrap research">
-    								<div id="indicatorContainer"></div>   														
-    							</div>
-    							<p>Research</p>	
-    						</div>
-    						<div class="item_for_progress wow flipOutX" data-wow-delay='.7s'>
-    							<div class="containerWrap management">
-    								<div id="indicatorContainer"></div>								
-    							</div>
-    							<p>Management</p>	
-    						</div>
-    						<div class="item_for_progress wow flipOutX" data-wow-delay='.9s'>
-    							<div class="containerWrap consultancy">
-    								<div id="indicatorContainer"></div>   								
-    							</div>
-    							<p>Consultancy</p>	
-    						</div>
-    						<div class="item_for_progress wow flipOutX" data-wow-delay='1.1s'>
-    							<div class="containerWrap promotion">
-    								<div id="indicatorContainer"></div>  								
-    							</div>
-    							<p>Promotion</p>	
-    						</div>
-    					</div>
-    				</div>
-    			</section>
-    		</section>
-    		<section class="projects scrollto" id='sect_projects'>
-    			<section class="portfolio">
-    				<div class="section_head">
-    					<div class="container">
-    						<div class="row">
-    							<div class="col-md-6 col-md-offset-3 wow bounceInDown" data-wow-delay='.5s'>
-    								<h2>Some Recent Projects</h2>
-    								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam aut eius illum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, magnam.</p>
-    							</div>
-    						</div>
-    					</div>
-    				</div>
-    				<div class="container-fluid">
-    					<div class="row">
-    						<div class="col-sm-6 col-md-3 port">
-    							<img src="img/img_1.png" alt="img_1" class='img-responsive wow fadeIn' data-wow-delay="0.1s">
-    							<div class="paperClips">
-    								<div class="text">
-    									<h4>Paperclips</h4>
-    									<p class='descr'>Branding</p>
-    								</div>
-    							</div>
-    						</div>
-    						<div class="col-sm-6 col-md-3 port">
-    							<img src="img/img_2.png" alt="img_2" class='img-responsive wow fadeIn' data-wow-delay="0.3s">
-    							<div class="paperClips">
-    								<div class="text">
-    									<h4>Paperclips</h4>
-    									<p class='descr'>Branding</p>
-    								</div>
-    							</div>
-    						</div>
-    						<div class="col-sm-6 col-md-3 port">
-    							<img src="img/img_3.png" alt="img_3" class='img-responsive wow fadeIn' data-wow-delay="0.5s">
-    							<div class="paperClips">
-    								<div class="text">
-    									<h4>Paperclips</h4>
-    									<p class='descr'>Branding</p>
-    								</div>
-    							</div>
-    						</div>
-    						<div class="col-sm-6 col-md-3 port">
-    							<img src="img/img_4.png" alt="img_4" class='img-responsive wow fadeIn' data-wow-delay="0.7s">
-    							<div class="paperClips">
-    								<div class="text">
-    									<h4>Paperclips</h4>
-    									<p class='descr'>Branding</p>
-    								</div>
-    							</div>
-    						</div>
-    					</div>
-    				</div>
-    			</section>
-    			<section class="latest_twits wow fadeInUp" data-wow-duration="2s">
-    				<div class="container">
-    					<div class="row">
-    						<div class="col-md-8 col-md-offset-2">
-    							<h4>Latest from twitter</h4>
-    							<p>Trying out velositey - a simple website building extension for Photoshop <span>.</span></p>
-    							<a href="#" class='link'>buff.ly/NC8gog</a>
-    						</div>
-    					</div>
-    				</div>
-    			</section>
-    			<section class="portfolio">
-    				<div class="container-fluid">
-    					<div class="row">
-    						<div class="col-sm-6 col-md-3 port">
-    							<img src="img/img_5.png" alt="img_5" class='img-responsive wow fadeIn' data-wow-delay="1.5s">
-    							<div class="paperClips">
-    								<div class="text">
-    									<h4>Paperclips</h4>
-    									<p class='descr'>Branding</p>
-    								</div>
-    							</div>
-    						</div>
-    						<div class="col-sm-6 col-md-3 port">
-    							<img src="img/img_6.png" alt="img_6" class='img-responsive wow fadeIn' data-wow-delay="1.3s">
-    							<div class="paperClips">
-    								<div class="text">
-    									<h4>Paperclips</h4>
-    									<p class='descr'>Branding</p>
-    								</div>
-    							</div>
-    						</div>
-    						<div class="col-sm-6 col-md-3 port">
-    							<img src="img/img_7.png" alt="img_7" class='img-responsive wow fadeIn' data-wow-delay="1.1s">
-    							<div class="paperClips">
-    								<div class="text">
-    									<h4>Paperclips</h4>
-    									<p class='descr'>Branding</p>
-    								</div>
-    							</div>
-    						</div>
-    						<div class="col-sm-6 col-md-3 port">
-    							<img src="img/img_8.png" alt="img_8" class='img-responsive wow fadeIn' data-wow-delay="0.9s">
-    							<div class="paperClips">
-    								<div class="text">
-    									<h4>Paperclips</h4>
-    									<p class='descr'>Branding</p>
-    								</div>
-    							</div>
-    						</div>
-    					</div>
-    				</div>
-    				<div class="container see_all">
-    					<a href="#" class="button">See All<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-    				</div>
-    			</section>   			
-    		</section>
-    		<section class="our_team scrollto" id='sect_our_team'>
-    			<div class="team">
-    				<div class="section_head wow bounceInDown" data-wow-delay='.3s'>
-    					<div class="container">
-    						<div class="row">
-    							<div class="col-md-6 col-md-offset-3">
-    								<h2>Our team members</h2>
-    								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam aut eius illum.</p>
-    							</div>
-    						</div>
-    					</div>
-    				</div>
-    				<div class="container">
-    					<div class="row">
-    						<div class="col-md-4 item" >
-    							<div class="wrap wow fadeInDown" data-wow-delay="0.5s">
-    								<img src="img/Mitchell.png" alt="Michell" class="img-responsive">
-    								<div class="links">
-    									<div class="wrapper">
-    										<a href="#" class='social tw'><i class="fa fa-twitter" aria-hidden="true"></i></a>
-    										<a href="#" class='social fb'><i class="fa fa-facebook" aria-hidden="true"></i></a>
-    										<a href="#" class='social in'><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-    									</div>
-    								</div>
-    							</div>
-    							<div class="descr">
-    								<p class="name">Mitchell Anderson</p>
-    								<p class="position">Creative Director</p>
-    							</div>
-    						</div>
-    						<div class="col-md-4  item">
-    							<div class="wrap wow fadeInDown"  data-wow-delay="0.7s">
-    								<img src="img/Mitchell.png" alt="Michell" class="img-responsive">
-    								<div class="links">
-    									<div class="wrapper">
-    										<a href="#" class='social tw'><i class="fa fa-twitter" aria-hidden="true"></i></a>
-    										<a href="#" class='social fb'><i class="fa fa-facebook" aria-hidden="true"></i></a>
-    										<a href="#" class='social in'><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-    									</div>
-    								</div>
-    							</div>
-    							<div class="descr">
-    								<p class="name">Mitchell Anderson</p>
-    								<p class="position">Creative Director</p>
-    							</div>
-    						</div>
-    						<div class="col-md-4 item" >
-    							<div class="wrap wow fadeInDown" data-wow-delay="0.9s">
-    								<img src="img/Mitchell.png" alt="Michell" class="img-responsive">
-    								<div class="links">
-    									<div class="wrapper">
-    										<a href="#" class='social tw'><i class="fa fa-twitter" aria-hidden="true"></i></a>
-    										<a href="#" class='social fb'><i class="fa fa-facebook" aria-hidden="true"></i></a>
-    										<a href="#" class='social in'><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-    									</div>
-    								</div>
-    							</div>
-    							<div class="descr">
-    								<p class="name">Mitchell Anderson</p>
-    								<p class="position">Creative Director</p>
-    							</div>
-    						</div>
-    					</div>
-    				</div>
-    			</div>
-    			<section class="client_saying">
-    				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-    					<div class="carousel-inner" role="listbox">
-    						<div class="item active">
-    							<div class="caption">
-    								<div class="container">
-    									<div class="col-md-6 col-md-offset-3">
-    										<h3>What Our Clients are saying</h3>
-    										<blockquote>"It was a pleasure to work with Imran. He is very dedicated and the communication was great"</blockquote>
-    										<p class="autor">John Doe</p>
-    										<a href="#" class='link'>www.yourwebsite.zt</a>
-    									</div>
-    								</div>
-    							</div>
-    						</div>
-    						<div class="item">
-    							<div class="caption">
-    								<div class="container">
-    									<div class="col-md-6 col-md-offset-3">
-    										<h3>What Our Clients are saying</h3>
-    										<blockquote>"It was a pleasure to work with Imran. He is very dedicated and the communication was great"</blockquote>
-    										<p class="autor">John Doe</p>
-    										<a href="#" class='link'>www.yourwebsite.zt</a>
-    									</div>
-    								</div>
-    							</div>
-    						</div>
-    						<div class="item">
-    							<div class="caption">
-    								<div class="container">
-    									<div class="col-md-6 col-md-offset-3">
-    										<h3>What Our Clients are saying</h3>
-    										<blockquote>"It was a pleasure to work with Imran. He is very dedicated and the communication was great"</blockquote>
-    										<p class="autor">John Doe</p>
-    										<a href="#" class='link'>www.yourwebsite.zt</a>
-    									</div>
-    								</div>
-    							</div>    						
-    						</div>
-    						<ol class="carousel-indicators">
-    							<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    							<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    							<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-    						</ol>
-    					</div>
-    				</div>
-    			</section>
-    		</section>
-    		<section class="our_blog scrollto" id='sect_our_blog'>
-    			<div class="section_head wow bounceInDown" data-wow-delay='.3s'>
-    				<div class="container">
-    					<div class="row">
-    						<div class="col-md-6 col-md-offset-3">
-    							<h2>Our blog</h2>
-    							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam aut eius illum.</p>
-    						</div>
-    					</div>
-    				</div>
-    			</div>
+    		<section class="statistic">
     			<div class="container">
-    				<div class="row">
-    					<div class="col-sm-12 col-md-6 item right for_bord_right wow fadeInUp" data-wow-delay='.4s'>
-    						<ul class="bxslider">
-    							<li><img src="img/slide.png"  class='img-responsive'/></li>
-    							<li><img src="img/slide.png" class='img-responsive'/></li>
-    							<li><img src="img/slide.png" class='img-responsive'/></li>
-    						</ul>
+    				<div class=" item item_1">
+    					<p>10 лет опыта <br><span>в решении дел семейного права</span></p>
+    				</div>
+    				<div class=" item item_2">
+    					<p>88 % <br> <span> успешных дел клиентов</span></p>
+    				</div>
+    				<div class=" item item_3">
+    					<div class="icon"></div>
+    					<p>304 <br> <span> новых случаев в год </span></p>
+    				</div>
+    			</div>
+    		</section>
+    		<section class="about_lawyer">
+    			<div class="container cliarfix">
+    				<div class="portrait">   					
+    				</div>
+    				<div class="info">
+    					<div class="bio">
+    						<h2>Цви Дафф</h2>
+    						<p>
+    							В 1998 году окончил Йельский университет с отличием.
+    						</p>
+    						<p>
+    							В 1999 году сдал адвокатские экзамены и получил лицензию.
+    						</p>
+    						<p>
+    							С 2000 по настоящее время возглавляет юридическую компанию, которая сейчас называется Lawyerity.
+    						</p>
+    						<p>
+    							За свой профессиональный путь принял личное участие в более чем 2300 различных дел из них 853 - по семейному праву.
+    						</p>
+    						<p>
+    							На данный момент лично контролирует качество и участвует в предоставлении услуг компании Lawyerity.
+    						</p>
+    						<p>
+    							Премуществами являются индивидуальный подход к решению проблем своих клиентов, многолетний опыт правозащитной деятельности и острое желание помочь в трудной ситуации. Доверив мне решение своей проблемы, Вам гарантирован, в той или иной ситуации, максимально возможный положительный результат.
+    						</p>
     					</div>
-    					<div class="col-sm-12 col-md-6 item left wow fadeInUp" data-wow-delay='.5s'>
-    						<div class="ellipse"></div>
-    						<article>
-    							<p class="date">10 April 2014</p>
-    							<h3>Typi non habent claritatem insitam</h3>
-    							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam tenetur corrupti dolores velit perspiciatis iusto nulla ratione maxime, quibusdam, quidem, sunt praesentium nostrum consequatur id <span>[...]</span></p>
-    						</article>
+    					<div class="receive_consultation cliarfix">
+    						<p class='header'>Получите консультацию <br><span>без обязательств</span></p>
+    						<a href='#' class="btn">Отправить</a>
+    					</div> 
+    				</div>
+    			</div>
+    		</section>
+    		<section class="our_features">
+    			<div class="overlay">
+    				<div class="container cliarfix">
+    					<div class="content_first">
+    						<h2>
+    							Наши преимущества
+    						</h2>
+    						<p class="descr">
+    							Ваш вопрос будет вести юрист, годами  сопровождающий семейные дела, 
+    							прогнозирующий ситуацию и наперед знающий, какие действия 
+    							для Вас более полезны.
+    						</p>
+    						<div class="receive_consultation cliarfix">
+    							<p>Получите консультацию <br><span>без обязательств</span></p>
+    							<a href="#" class="button">Отправить</a>
+    						</div>
     					</div>
-    					<div class="clear"></div>
-    					<div class="col-sm-12 col-md-6 item right wow fadeInUp" data-wow-delay='.6s'>    					
-    						<article>
-    							<p class="date">20 March 2014</p>
-    							<h3>Typi non habent claritatem insitam</h3>
-    							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam tenetur corrupti dolores velit perspiciatis iusto nulla ratione maxime, quibusdam, quidem, sunt praesentium nostrum consequatur id <span>[...]</span></p>
-    						</article>
-    					</div>
-    					<div class="col-sm-12 col-md-6 item left for_bord_left wow fadeInUp" data-wow-delay='.7s'>
-    						<div class="ellipse"></div>
-    						<img src="img/slide.png" alt="slide" class='img-responsive'>
-    					</div>
-    					<div class="col-sm-12 col-md-6 item right for_bord_right lastPhoto wow fadeInUp" data-wow-delay='.8s'>
-    						<img src="img/slide.png" alt="slide" class='img-responsive'>
-    						<div class="all_post">All Post</div>
-    					</div>
-    					<div class="col-sm-12 col-md-6 item left lastPost wow fadeInUp" data-wow-delay='.9s'>
-    						<div class="ellipse"></div>
-    						<article>
-    							<p class="date">20 March 2014</p>
-    							<h3>Typi non habent claritatem insitam</h3>
-    							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam tenetur corrupti dolores velit perspiciatis iusto nulla ratione maxime, quibusdam, quidem, sunt praesentium nostrum consequatur id <span>[...]</span></p>
-    						</article>
+    					<div class="content_second">
+    						<div class="left">
+    							<div class="item_one">
+    								<p class="privilege">
+    									Полная гарантия <br> <span>конфиденциальности информации</span>
+    								</p>
+    							</div>
+    							<div class="item_second">
+    								<p class="privilege">
+    									Гарантия сроков <br> <span>в течении процесса</span>
+    								</p>
+    							</div>
+    							<div class="item_third">
+    								<p class="privilege">
+    									переговоры <br> <span> в удобное время</span>
+    								</p>
+    							</div>
+    							<div class="cliarfix"></div>
+    						</div>
+    						<div class="right">
+    							<div class="item_four">
+    								<p class="privilege">
+    									Цены на услуги <br> <span>не меняются в ходе работы</span>
+    								</p>					
+    							</div>
+    						</div>
     					</div>
     				</div>
     			</div>
     		</section>
-    		<section class="contact wow zoomIn scrollto" data-wow-delay='.3s' id='sect_contact'>
-    			<div class="container">
-    				<div class="row">
-    					<div class="col-md-8 col-md-offset-2">
-    						<h2>Contact</h2>
-    						<form action="#" method='post'>
-    							<input type="text" class="form" placeholder="Name*">
-    							<input type="email" class="form" placeholder="Email*" required aria-required="true">
-    							<textarea class="form">Message...</textarea>
-    							<div class="for_line"></div>
-    							<button type="submit" class='button'>Submit</button>
-    						</form>
-    					</div>
+    		<section class="get_info">
+    			<div class="container cliarfix">
+    				<div class="get_consult">
+    					<h2>Получите консультацию без обязательств</h2>
+    					<p>
+    						по телефону<br>
+    						<span>+7 024 840 38 22</span><br>
+    						или оставьте заявку на сайте
+    					</p>
+    				</div>
+    				<div class="bottom_form">
+    					<form action="#" method='post'>
+    						<h3>Получите консультацию опытного адвоката</h3>
+    						<input type="text" class='input_group' placeholder='Ваше имя'>
+    						<input type="tel" class='input_group' placeholder='Телефон'>
+    						<textarea  rows='1' placeholder='Кратко опишите проблему' class='input_group textarea cliarfix'></textarea>
+    						<input type="submit" value='отправить' class='btn'>
+    					</form>
     				</div>
     			</div>
     		</section>
     	</main>
-    	<footer>
-    		<div class="footer_top">
-    			<div class="container">
-    				<div class="row">
-    					<div class="col-sm-6 col-md-3">
-    						<a href="#" class='logo'><img src="img/logo_2.png" alt="logo"></a>
-    						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque modi, repellat perferendis, praesentium ipsum illum ab, officiis necessitatibus tempore facere sunt sint ut pariatur quos!</p>
-    						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est magni quos quisquam, libero sunt, laborum, eum dolorum voluptate, voluptas officia consequatur veniam aut perferendis fuga nostrum aspernatur. Ratione accusamus aperiam voluptate ex in alias sequi.</p>
-    					</div>
-    					<div class="col-sm-6 col-md-3 item ">
-    						<h4>Recent Posts</h4>
-    						<article>
-    							<p class="date">March 30, 2014</p>
-    							<p>Duis autem vel eum iriure dolor.</p>
-    						</article>
-    						<article>
-    							<p class="date">March 30, 2014</p>
-    							<p>Duis autem vel eum iriure dolor.</p>
-    						</article>
-    						<article>
-    							<p class="date">March 30, 2014</p>
-    							<p>Duis autem vel eum iriure dolor</p>
-    						</article>
-    					</div>
-    					<div class="col-sm-6 col-md-3 item ">
-    						<h4>Twitter Feeds</h4>
-    						<article>
-    							<p class="time">about 2 days ago<a href="mailto"> @Kristianplatt</a></p>
-    							<p class="text">Good Work Buddy</p>
-    						</article>
-    						<article>
-    							<p class="time">about 2 days ago<a href="mailto"> @Kristianplatt</a></p>
-    							<p class="text">Good Work Buddy</p>
-    						</article>
-    						<article>
-    							<p class="time">about 2 days ago<a href="mailto"> @Kristianplatt</a></p>
-    							<p class="text">Good Work Buddy</p>
-    						</article>
-    					</div>
-    					<div class="col-sm-6 col-md-3 item">
-    						<h4>Our Address</h4>
-    						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, nihil, libero! Debitis eveniet accusamus ea ad, illum, vitae neque sunt, ratione suscipit doloremque repudiandae odio aspernatur optio in praesentium numquam.</p>
-    						<address>
-    							<p><i class="fa fa-map-marker" aria-hidden="true"></i>Moonshine St. 14/05 Light, Jupiter</p>
-    							<p><i class="fa fa-phone" aria-hidden="true"></i>+00 (123) 456 78 90</p>
-    							<p><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto">first.last@email.com</a></p>
-    						</address>	
-    					</div>
+    	<footer class='footer'>
+    		<div class="container">
+    			<div class="bl item_1">
+    				<div class="contacts">
+    					<p>Контакты</p>
+    					<p>ул.Миропольская 34/12</p>
+    					<p class='phone'>тел. +7 024 840 38 22</p>
+    					<a href="mailto:lawyerity@gmail.com" class='mail'>эл.почта lawyerity@gmail.com</a>
     				</div>
     			</div>
-    		</div>
-    		<div class="footer_bottom">
-    			<div class="container">
-    				<p class="copy">
-    					&copy;2014 Imran Khan All Rights Reserved
-    				</p>
+    			<div class="bl item_2">
+    				<div class="logo">
+    					<a href="#" class='brand'>
+    						<span  class='logo_img'><img src="img/logo.png" alt="logo" class='first_logo'></span><br>
+    						<span class='name_company'>lawyer company</span>
+    					</a>
+    				</div>
+    			</div>
+    			<div class="bl item_3">
+    				<img src="img/logo_GM.png" alt="logo_gm" class='second_logo'>
     			</div>
     		</div>
-    	</footer>
-    	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    	</footer>	
     	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    	<!-- Include all compiled plugins (below), or include individual files as needed -->
-    	<script src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js'></script>
-    	<script src="js/jquery.easing.min.js"></script>
-    	<script src="js/jquery.stickyNavbar.min.js"></script>
-    	<script src="js/bootstrap.js"></script>
-    	<script src='js/radialIndicator.js'></script>
-    	<script src='js/jquery.bxslider.js'></script>
-    	<script src='js/script.js'></script>
-    	<script>
-    	</script>
     </body>
     </html>
