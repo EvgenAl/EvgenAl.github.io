@@ -1,9 +1,7 @@
 /*=====================COMMON STYLES======================*/
 
-*{
-	box-sizing:border-box;
-}
 body{
+	margin:0;
 	min-width: 320px;
 }
 
@@ -11,27 +9,6 @@ section{
 	position: relative;
 }
 
-.container{
-	margin-right: auto;
-	margin-left: auto;
-	padding-left: 15px;
-	padding-right: 15px;
-	@media(max-width:767px){
-		width: auto;
-	}
-	@media(min-width:768px){
-		width: 750px;
-	}
-	@media(min-width:992px){
-		width: 970px;
-	}
-	@media(min-width:1200px){
-		width: 1170px;
-	}
-	@media(min-width:1650px){
-		width: 1625px;
-	}
-}
 
 ul{
 	padding: 0;
@@ -41,6 +18,9 @@ ul{
 a{
 	text-decoration: none;
 	&:hover{
+		text-decoration: none;
+	}
+	&:focus{
 		text-decoration: none;
 	}
 }
@@ -66,87 +46,57 @@ a{
 
 button, 
 button:active, 
-textarea:focus,
 button:focus,
-input:focus {
+input:focus,
+textarea:focus{
 	outline: none;
 }
 
+
 .header{
-	font-family: Roboto,sans-serif;
-	font-size: 26px;
-	font-weight: 700;
-	color: #e5e3e5;
+	margin: 0 0 20px 0;
+	font-family: Oranienbaum;
+	font-size: 16px;
+	font-weight: 400;
 	text-transform: uppercase;
-	margin-top: 0;
 	span{
-		color: #353535;
 		text-transform: lowercase;
 	}
-	@media(max-width:991px){
-		font-size: 20px;
-	}
 }
 
-.btn{
-	color: white;
-	font-family: Roboto;
-	font-size: 18px;
-	font-weight: 400;
-	padding: 16px 0;
-	width: 220px;
-	border:0;
-	background: #1c4f4e;
-	text-align: center;
-	border-radius:0;
-	transition:all ease-out .5s;
-	cursor:pointer;
-	@media(max-width:1199px){
-		font-size: 16px;
-		width: 180px;
-		padding: 14px 0;
-	}
-	&:hover{
-		background: #063938;
-		border-radius:4px;
-	}
-}
-
-.logo{
-	float:left;
-	margin-left: 95px;
-	padding-top: 30px;
-	@media(max-width:430px){
-		float:none;
-		text-align: center;
-	}
-	.logo_img{
-		position: relative;
-		padding-bottom: 20px;
-		display: inline-block;
-		&::after{
-			content:'';
-			position: absolute;
-			bottom:7px;
-			left: 0;
+		input[type=text], input[type=tel]{
+			border:0;
+			border-bottom: 2px solid #fff;
+			background: transparent;
+			padding: 5px 0;
+			font-family: Roboto,sans-serif;
+			font-size: 18px;
+			font-weight: 400;
+			color:#fff;
 			width: 100%;
-			height: 2px;
-			background: url(../img/line_small.png) no-repeat;
+			margin-bottom: 20px;
+			&::-webkit-input-placeholder{
+				color: white;
+				font-family: "Arial Narrow";
+				font-size: 14px;
+				font-style: italic;
+			}
+			&::-moz-placeholder{
+				color: white;
+				font-family: "Arial Narrow";
+				font-size: 14px;
+				font-style: italic;
+			}
+			&:-ms-input-placeholder{
+				color: white;
+				font-family: "Arial Narrow";
+				font-size: 14px;
+				font-style: italic;
+			}
+			&::placeholder{
+				color: white;
+				font-family: "Arial Narrow";
+				font-size: 14px;
+				font-style: italic;
+			}
 		}
-	}
-	.name_company{
-		color: white;
-		font-family: Roboto,sans-serif;
-		font-size: 14px;
-		font-weight: 700;
-		text-transform: uppercase;
-		display: inline-block;
-	}
-}
-
-.for_float{
-	display: none;
-	@media(max-width:540px){
-		display: block;
-	}
-}
