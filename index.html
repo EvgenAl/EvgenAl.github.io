@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
+	<meta charset="UTF-8">
+	<meta name="author" content="">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-	<title>Scandic</title>
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet"> 
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
+	<meta name="HandheldFriendly" content="True">
+	<meta http-equiv="cleartype" content="on">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>Project Title</title>
+	<link href="https://fonts.googleapis.com/css?family=Nunito:300,400|Yantramanav:300,400" rel="stylesheet"> 
+	<link rel="stylesheet" href="css/style.css">
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -17,171 +21,436 @@
       <![endif]-->
     </head>
     <body>
-    	<header>
-    		<nav class='navigation'>
-    			<div class="container cliarfix">
-    				<div class="row">
-    					<div class="logo">
-    						<a href="#" class='brand cliarfix'>
-    							<img src="img/logo.png" alt="logo" class='img'>
-    							Scandic
-    						</a>
-    					</div>
-    					<div class="wrap cliarfix">	
-    						<div class="search">
-    							<input type="search" placeholder='Поиск...'>
-    							<a class="button"><img src="img/search.png" alt="search"></a>
-    						</div>
-    						<div class="menu">
-    							<a href="#">menu</a>						
-    						</div>				
-    					</div>
-    				</div>
-    			</div>
-    			<div class="modal_menu">
-    				<button class='cross'><img src="img/cross.png" alt="X"></button>
-    				<ul class="sidebar">
-    					<li><a href="about.html">О компании</a></li>
-    					<li><a href="catalog.html" class='active'>Продукция</a></li>
-    					<li><a href="#">НОВОСТИ</a></li>
-    					<li><a href="#">Архитекторам</a></li>
-    					<li><a href="#">контакты</a></li>
-    				</ul>
-    			</div>
-    		</nav>
-    		<div class="banner">
-    			<div class="container">
-    				<div class="row">
-    					<img src="img/img_2.png" alt="banner" class='img-responsive'>
-    				</div>
-    			</div>
-    		</div>
-    	</header>
-    	<main class='catalog'>
-    		<section class="our_catalog">
-    			<div class="container">
-    				<div class="row">
-    					<div class="col-md-offset-1 col-md-10 wrap">
-    						<div class="wrapper_head">
-    							<h2>Каталог</h2>
-    						</div>
-    						<div class="content">
-    							<div class="col-xs-6 col-md-6 item item_1">
-    								<img src="img/window.png" alt="window" class='img-responsive'>
-    							</div>
-    							<div class="col-xs-6 col-md-6 item info line item_2">
-    								<h3 class='active'>Изготовление окон</h3>
-    								<p>
-    									Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности.
-    								</p>
-    							</div>
-    							<div class="cliarfix"></div>
-    							<div class="col-xs-6  col-md-6 item info item_3">
-    								<h3>Изготовление дверей</h3>
-    								<ul class='list'>
-    									<li class='active'>- СТОЕЧНО-РИГЕЛЬНЫЕ СИСТЕМЫ</li>
-    									<li>- ПОДЪЕМНО-РАЗДВИЖНЫЕ ДВЕРИ</li>
-    									<li>- ВХОДНЫЕ ДВЕРИ</li>
-    									<li>- ЗИМНИЕ САДЫ</li>
-    								</ul>
-    							</div>
-    							<div class="col-xs-6 col-md-6 item item_4">
-    								<img src="img/door.png" alt="door" class='img-responsive'>
-    							</div>
-    							<div class="col-xs-6 col-md-6 item item_5">
-    								<img src="img/garden.png" alt="garden" class='img-responsive'>
-    							</div>
-    							<div class="col-xs-6 col-md-6 item info line item_6">						
-    								<h3>Зимние сады</h3>
-    								<p>
-    									Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности.
-    								</p>  								
-    							</div>
-    							<div class="cliarfix"></div>
-    							<div class="col-xs-6 col-md-6 item info item_7"> 
-    								<h3>Дополнительное оснащение</h3>
-    								<ul class='list'>
-    									<li>- Сетки</li>
-    									<li>- Жалюзи</li>
-    									<li>- Клапаны</li>
-    								</ul>
-    							</div>
-    							<div class="col-xs-6 col-md-6 item item_8">
-    								<img src="img/grids.png" alt="grids" class='img-responsive'>
-    							</div>
-    						</div>
-    					</div>
-    				</div>
-    			</div>
-    		</section>
-    		<section class="brands">
-    			<div class="container">
-    				<div class="row">
-    					<div class="col-md-offset-1 col-md-10 wrap">
-    						<h2>Бренды</h2>
-    						<div class="col-sm-4 col-md-4 item">
-    							<div class="images_border">
-    								<img src="img/logo_skaala.png" alt="skaala">
-    							</div>
-    							<p class="brand_name">Skaala</p>
-    						</div>
-    						<div class="col-sm-4 col-md-4 item">
-    							<div class="images_border">
-    								<img src="img/unilux.png" alt="unilux">
-    							</div>
-    							<p class="brand_name">Unilux</p>
-    						</div>
-    						<div class="col-sm-4 col-md-4 item">
-    							<div class="images_border">
-    								<img src="img/wooder.png" alt="wooder">
-    							</div>
-    							<p class="brand_name">Wooder</p>
-    						</div>
-    					</div>
-    				</div>
-    			</div>
-    		</section>
-    	</main>
-    	<footer>
-    		<div class="footer_top">
-    			<div class="container">
-    				<div class="row">
-    					<form action="#" method='post' class="form">
-    						<p class="questions">Есть вопросы?</p>
-    						<div class="col-md-4 item item_1">
-    							<input type="text" placeholder='имя' class='area'>
-    							<input type="tel" placeholder='телефон' class='area'>
-    							<input type="email" placeholder='e-mail' class='area'>
-    						</div>
-    						<div class="col-md-4 item item_2">
-    							<textarea name="text"  placeholder='сообщение' class='area'></textarea>
-    						</div>
-    						<div class="col-md-offset-1 col-md-3 item item_3">
-    							<input type="submit" class='btn' value='Отправить cooбщение'>
-    						</div>
-    					</form>
-    				</div>
-    			</div>
-    		</div>
-    		<div class="footer_bottom">
-    			<div class="container">
-    				<div class="row">
-    					<div class="social">
-    						<a href="#" class='link'></a>
-    						<a href="#" class='link'></a>
-    						<a href="#" class='link'></a>
-    						<a href="#" class='link'></a>
-    					</div>
-    					<p class="copy">
-    						Copyright &copy; 2016 Scandic. Все права защищены
-    					</p>
-    				</div>
-    			</div>
-    		</div>
-    	</footer>
-    	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    	<!-- Include all compiled plugins (below), or include individual files as needed -->
-    	<script src="js/script.js"></script>
-    </body>
-    </html>
+
+<header>
+	<div class="container">
+		<div class="row">
+			<div class="wrapper">
+				<div class="logo">
+					<a href="#" class='brand'><img src="i/logo.png" alt="logo"></a>
+				</div>
+				<div class="info">
+					<h1><span id='js-text'>Coming Soon</span></h1>
+					<p>goplae.co.uk is coming soon but in the meantime check out this page and sign up to our newsletter for more information</p>
+					
+											<div class="form_group">
+												<input type="email" class="field" placeholder='enter email address'>
+												<button class="btn">Sign Up</button>
+											</div>
+				</div>
+				<div id="fountainG">
+					<div id="fountainG_1" class="fountainG"></div>
+					<div id="fountainG_2" class="fountainG"></div>
+					<div id="fountainG_3" class="fountainG"></div>
+					<div id="fountainG_4" class="fountainG"></div>
+					<div id="fountainG_5" class="fountainG"></div>
+					<div id="fountainG_6" class="fountainG"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<main>
+	<section class="review">
+		<div class="container">
+			<div class="row">
+				<div class="wrapper">
+					<div class="item item_1">
+						<h2>About Plae</h2>
+						<p>
+							Previously a Designer for Puma and Adidas, Head Designer Ryan Ringholz has started a new revolution in kids trainers. Using technology usually reserved for elite athletes, Plae creates shoes designed especially for a child’s foot.
+						</p>
+						<p>
+							Because kids feet are always growing, their shoes should accommodate leaving the cartilage and fledgling bone room to grow its own way. The interchangeable tabs adjust to accommodate thinner, wider or thicker feet and nearly all Plae shoes can fit an AFO orthotic brace.
+						</p>
+						<p>
+							With their dynamic traction, little feet can feel the ground beneath them and get a grip on it. The rest is designed to elite athlete standards: super shock absorption, durable toe guards, and wicking, washable anti-microbial inserts.
+						</p>
+						<p>				
+							With every shoe, Plae sources responsible, recycled, and non-toxic materials, and makes sure 
+						</p>
+					</div>
+					<div class="item item_2">
+						<img src="i/img_1.png" alt="img_1" class='img-responsive'>
+					</div>
+					<div class="item item_3">
+						<img src="i/img_2.png" alt="img_2" class='img-responsive'>
+					</div>
+					<div class="item item_4">
+						<h2>What our customers say</h2>
+						<p class="quote">
+							I like them because they are very comfy and soft inside. They are really light which means I run faster. I like the cool straps that I can change
+						</p>
+						<p class="author">
+							Charlie (age 8)
+						</p>
+					</div>
+					<div class="item item_5">
+						<p class="quote">
+							I like that I can do PE in them because they're so comfy and then after school in the park, the bottoms are grippy so I can climb really well
+						</p>
+						<p class="author">
+							Edie (age 6)
+						</p>
+					</div>
+					<div class="item item_6">
+						<img src="i/img_3.png" alt="img_3" class='img-responsive'>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="the_range">
+		<div class="container">
+			<div class="row">
+				<div class="wrapper">
+					<h2>The Range</h2>
+					<p class="descr">View the styles available now from select stockists</p>
+					<div id="carousel-example-generic" class="carousel fade" data-ride="carousel">
+						<div class="carousel-inner" role="listbox">
+							<div class="item active">
+								<img src="i/shoues_1.png" alt="shoues_1">
+								<div class="carousel-caption">
+									<p class='model'>TY</p>
+									<p class='slide_number'>1/7</p>
+								</div>
+							</div>
+							<div class="item">
+								<img src="i/shoues_2.png" alt="shoues_2">
+								<div class="carousel-caption">
+									<p class='model'>max</p>
+									<p class='slide_number'>2/7</p>
+								</div>
+							</div>
+							<div class="item">
+								<img src="i/shoues_3.png" alt="shoues_3">
+								<div class="carousel-caption">
+									<p class='model'>EMME</p>
+									<p class='slide_number'>3/7</p>
+								</div>
+							</div>
+							<div class="item item_4">
+								<img src="i/shoues_4.png" alt="shoues_4">
+								<div class="carousel-caption">
+									<p class='model'>CAMILLE</p>
+									<p class='slide_number'>4/7</p>
+								</div>
+							</div>
+							<div class="item item_5">
+								<img src="i/shoues_5.png" alt="shoues_5">
+								<div class="carousel-caption">
+									<p class='model'>NOEL</p>
+									<p class='slide_number'>5/7</p>
+								</div>
+							</div>
+							<div class="item">
+								<img src="i/shoues_6.png" alt="shoues_6">
+								<div class="carousel-caption">
+									<p class='model'>ROAN </p>
+									<p class='slide_number'>6/7</p>
+								</div>
+							</div>
+							<div class="item">
+								<img src="i/shoues_7.png" alt="shoues_7">
+								<div class="carousel-caption">
+									<p class='model'>NAT</p>
+									<p class='slide_number'>7/7</p>
+								</div>
+							</div>
+						</div>
+						<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+							<img src="i/arrow_left.png" alt="left">
+						</a>
+						<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+							<img src="i/arrow_right.png" alt="right">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="why_plae">
+		<div class="container">
+			<div class="row">
+				<div class="wrapper cliarfix">
+					<h2>Why Plae? </h2>
+					<p class="descr">Some of the features that make Plae shoes so good for kids</p>
+					<div class="col-xs-6 col-md-3 sidebar">
+						<div class="row">
+							<div class="col-md-11 item">
+								<div class="alert">
+									<h3>Pull Tab</h3>
+									<p>makes it easy for little hands and fingers to get their shoes on.</p>
+								</div>
+							</div>
+							<div class="col-md-11 item">
+								<div class="alert">
+									<h3>Shock Absorption</h3>
+									<p>
+										removable ECO-ORTHOLITE® anti-microbial, anti-bacterial insole, made from castor beans, provides superior protection with renewable resources.
+									</p>
+								</div>
+							</div>
+							<div class="col-md-11 item">
+								<div class="alert">
+									<h3>Custom Fit & Style</h3>
+									<p>
+										interchangeable tabs come in S,M,L,XL sizes to accommodate instep widths and allows kids to make it their own with different color, material and print options. Plae shoes also have the ability to fit AFO .
+									</p>
+								</div>
+							</div>
+							<div class="col-md-11 item">
+								<div class="alert">
+									<h3>Eco-Friendly</h3>
+									<p>
+										made in a solar powered, fair labour factory using recycled milk jugs (PET), ISO certified leathers, and water-based 
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-0 col-md-6">
+					</div>
+					<div class="col-xs-6 col-md-3 sidebar">
+						<div class="col-xs-12 col-md-offset-2 col-md-10 item">
+							<div class="alert">
+								<h3>Machine Washable*</h3>
+								<p>for when kids get dirty.</p>
+							</div>
+						</div>
+						<div class="col-xs-12 col-md-offset-2 col-md-10 item">
+							<div class="alert">
+								<h3>Anatomical Form</h3>
+								<p>specially engineered sole follows the natural contour of a child’s foot - which is mostly</p>
+							</div>
+						</div>
+						<div class="col-xs-12 col-md-offset-2 col-md-10 item">
+							<div class="alert">
+								<h3>Flexible Sole</h3>
+								<p>promotes natural movement by allowing for a free range of movement.</p>
+							</div>
+						</div>
+						<div class="col-xs-12 col-md-offset-2 col-md-10 item">
+							<div class="alert">
+								<h3>Passive Traction</h3>
+								<p>promotes natural movement by providing grip on loose earth without compromising contact on hard surfaces.</p>
+							</div>
+						</div>
+						<div class="col-xs-12 col-md-offset-2 col-md-10 item">
+							<div class="alert">
+								<h3>Toe Guard</h3>
+								<p>protects both the foot and shoe from toe drag.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="address">
+		<div class="container">
+			<div class="row">
+				<div class="wrapper">
+					<h2>Where can you find us? </h2>
+					<p class="descr"> See below our UK stockist list</p>
+					<div class="content">
+						<div class="item">
+							<p class='bold'>Best Foot Forward</p>
+							<address>
+								76 Liverpool Road <br>	
+								Preston<br>
+								PR1 0QD<br>
+								0208 969 7565
+							</address>
+							<a href="bestfootforward.co.uk" class='site'>bestfootforward.co.uk</a>
+						</div>
+						<div class="item">
+							<p class='bold'>Best Foot Forward</p>
+							<address>
+								76 Liverpool Road <br>	
+								Preston<br>
+								PR1 0QD<br>
+								0208 969 7565
+							</address>
+							<a href="bestfootforward.co.uk" class='site'>bestfootforward.co.uk</a>
+						</div>
+						<div class="item">
+							<p class='bold'>Best Foot Forward</p>
+							<address>
+								76 Liverpool Road <br>	
+								Preston<br>
+								PR1 0QD<br>
+								0208 969 7565
+							</address>
+							<a href="bestfootforward.co.uk" class='site'>bestfootforward.co.uk</a>
+						</div>
+						<div class="item">
+							<p class='bold'>Best Foot Forward</p>
+							<address>
+								76 Liverpool Road <br>	
+								Preston<br>
+								PR1 0QD<br>
+								0208 969 7565
+							</address>
+							<a href="bestfootforward.co.uk" class='site'>bestfootforward.co.uk</a>
+						</div>
+						<div class="item">
+							<p class='bold'>Best Foot Forward</p>
+							<address>
+								76 Liverpool Road <br>	
+								Preston<br>
+								PR1 0QD<br>
+								0208 969 7565
+							</address>
+							<a href="bestfootforward.co.uk" class='site'>bestfootforward.co.uk</a>
+						</div>
+						<div class="item">
+							<p class='bold'>Best Foot Forward</p>
+							<address>
+								76 Liverpool Road <br>	
+								Preston<br>
+								PR1 0QD<br>
+								0208 969 7565
+							</address>
+							<a href="bestfootforward.co.uk" class='site'>bestfootforward.co.uk</a>
+						</div>
+						<div class="item">
+							<p class='bold'>Best Foot Forward</p>
+							<address>
+								76 Liverpool Road <br>	
+								Preston<br>
+								PR1 0QD<br>
+								0208 969 7565
+							</address>
+							<a href="bestfootforward.co.uk" class='site'>bestfootforward.co.uk</a>
+						</div>
+						<div class="item">
+							<p class='bold'>Best Foot Forward</p>
+							<address>
+								76 Liverpool Road <br>	
+								Preston<br>
+								PR1 0QD<br>
+								0208 969 7565
+							</address>
+							<a href="bestfootforward.co.uk" class='site'>bestfootforward.co.uk</a>
+						</div>
+						<div class="item">
+							<p class='bold'>Best Foot Forward</p>
+							<address>
+								76 Liverpool Road <br>	
+								Preston<br>
+								PR1 0QD<br>
+								0208 969 7565
+							</address>
+							<a href="bestfootforward.co.uk" class='site'>bestfootforward.co.uk</a>
+						</div>
+						<div class="item">
+							<p class='bold'>Best Foot Forward</p>
+							<address>
+								76 Liverpool Road <br>	
+								Preston<br>
+								PR1 0QD<br>
+								0208 969 7565
+							</address>
+							<a href="bestfootforward.co.uk" class='site'>bestfootforward.co.uk</a>
+						</div>
+						<div class="item">
+							<p class='bold'>Best Foot Forward</p>
+							<address>
+								76 Liverpool Road <br>	
+								Preston<br>
+								PR1 0QD<br>
+								0208 969 7565
+							</address>
+							<a href="bestfootforward.co.uk" class='site'>bestfootforward.co.uk</a>
+						</div>
+						<div class="item">
+							<p class='bold'>Best Foot Forward</p>
+							<address>
+								76 Liverpool Road <br>	
+								Preston<br>
+								PR1 0QD<br>
+								0208 969 7565
+							</address>
+							<a href="bestfootforward.co.uk" class='site'>bestfootforward.co.uk</a>
+						</div>
+						<div class="item">
+							<p class='bold'>Best Foot Forward</p>
+							<address>
+								76 Liverpool Road <br>	
+								Preston<br>
+								PR1 0QD<br>
+								0208 969 7565
+							</address>
+							<a href="bestfootforward.co.uk" class='site'>bestfootforward.co.uk</a>
+						</div>
+						<div class="item">
+							<p class='bold'>Best Foot Forward</p>
+							<address>
+								76 Liverpool Road <br>	
+								Preston<br>
+								PR1 0QD<br>
+								0208 969 7565
+							</address>
+							<a href="bestfootforward.co.uk" class='site'>bestfootforward.co.uk</a>
+						</div>
+						<div class="item">
+							<p class='bold'>Best Foot Forward</p>
+							<address>
+								76 Liverpool Road <br>	
+								Preston<br>
+								PR1 0QD<br>
+								0208 969 7565
+							</address>
+							<a href="bestfootforward.co.uk" class='site'>bestfootforward.co.uk</a>
+						</div>
+					</div>
+					<h3>Like to stock Plae?</h3>
+					<p class="descr">Call or email us to send an enquiry </p>
+					<div class="col-xs-12 col-sm-offset-2 col-sm-4 col-md-offset-4 col-md-2">
+						<a href="mailto:hello@goplae.co.uk" class='site mail'>hello@goplae.co.uk</a>
+					</div>
+					<div class="col-xs-12 col-sm-4  col-md-2">
+						<p class="tel">
+							07947 301292
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
+<footer>
+	<section class="sign_up">
+		<div class="container">
+			<div class="row">
+				<div class="wrapper">
+					<h2>Be the first to see goplae.co.uk</h2>
+					<p class='descr'>Sign Up for the latest news</p>
+					
+											<div class="form_group">
+												<input type="email" class="field" placeholder='enter email address'>
+												<button class="btn">Sign Up</button>
+											</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="footer_bottom">
+		<div class="container">
+			<div class="row">
+				<div class="wrapper">
+					<p class="copy">Copyright &copy; 2015 Craftymothers ltd. All Rights Reserved</p>
+				</div>
+			</div>
+		</div>
+	</section>
+</footer>
+
+
+<!-- JS section -->
+<script src="js/main.js"></script>
+
+
+</body>
+</html>
