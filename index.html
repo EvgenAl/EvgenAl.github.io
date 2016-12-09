@@ -5,14 +5,14 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-	<title>Бесплатный онлайн марафон</title>
+	<title>Mairala</title>
 	<!-- Bootstrap -->
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Underdog" rel="stylesheet"> 
+	<link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link href="css/bootstrap.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/slick.css">
-	<link rel="stylesheet" href="css/slick-theme.css">
-	<link rel="stylesheet" href="css/remodal.css">
-	<link rel="stylesheet" href="css/remodal-default-theme.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<link href="css/style.css" rel="stylesheet">
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -22,502 +22,494 @@
       <![endif]-->
     </head>
     <body>
-    	<div class="remodal-bg">
-    		<header>
-    			<div class="top_header">
+    	<header>
+    		<nav class='navigation header'>
+    			<div class="container">
+    				<div class="navbar-header">
+    					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+    						<i class="fa fa-bars" aria-hidden="true"></i>
+    					</button>
+    					<h1><a href="#"><img src="img/logo.png" alt="logo"></a></h1>
+    				</div>
+    				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    					<ul class="nav navbar-nav navbar-right">
+    						<li><a href="#banner" class='active'>Home</a></li>
+    						<li><a href="#sect_about_us">About </a></li>
+    						<li><a href="#sect_projects">Portfolios</a></li>
+    						<li><a href="#sect_our_team">Team </a></li>
+    						<li><a href="#sect_our_blog">Blog</a></li>
+    						<li><a href="#sect_contact">Contact</a></li>
+    					</ul>
+    				</div>
+    			</div>
+    		</nav>
+    		<div class="banner scrollto"  id='banner'>
+    			<div class="wrap">
+    				<div class="container">
+    					<div class="text">
+    						<p><span class='grab'>grab tour copy of</span><br>
+    							The <span class='forColor'>Premium</span> Quality <br> PSD Template For <span class='forColor'>free</span>
+    						</p>
+    						<a href="#" class="button">download<i class="fa fa-download" aria-hidden="true"></i></a>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</header>
+    	<main>
+    		<section class="about_us scrollto" id='sect_about_us'>
+    			<div class="section_head wow bounceInDown" data-wow-delay='.5s'>
     				<div class="container">
     					<div class="row">
-    						<div class="logo">
-    							<a href="#">
-    								<img src="img/logo.png" alt="logotype" class='image_logo'>
-    							</a>
-    						</div>
-    						<div class="icon">
-    							<span class="phone">8 (499) 346-79-46</span>
-    						</div>
-    						<div class="icon">
-    							<a href="mailto:nfo@mastervision.su"><span class="mail">nfo@mastervision.su</span></a>
-    						</div>
-    						<div class="icon">
-    							<span class="skype">admin-mastervision</span>
+    						<div class="col-md-6 col-md-offset-3">
+    							<h2>Know About Us</h2>
+    							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam aut eius illum.</p>
     						</div>
     					</div>
     				</div>
     			</div>
-    			<div class="middle_header">
-    				<div class="container">
-    					<div class="row">
-    						<div class="col-md-10 col-md-offset-1">
-    							<div class="info">
-    								<h1>
-    									<span class="name"> Бесплатный онлайн марафон:</span><br>
-    									“Сила медитации и прикладного гипноза для гармонизации жизни”
-    								</h1>
+    			<section class="we_are_best wow fadeInLeft" data-wow-delay='1s' data-wow-duration='2s'>
+    				<div class="wrap">
+    					<div class="container">
+    						<div class="row">
+    							<div class="col-sm-12 col-md-12 col-lg-6">
+    								<h3>We are the best</h3>
+    								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita consectetur sapiente illum voluptas inventore in reiciendis, vero, id aliquid, delectus labore quod optio soluta quo aliquam nostrum quas obcaecati veniam!</p>
+    								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur distinctio molestias labore possimus aliquam harum ad culpa, reiciendis quisquam quia nobis repellendus aliquid ratione ipsam assumenda earum explicabo at id. Nam officia cumque dolores, odio ad obcaecati laborum deleniti nemo rem, eveniet, id doloremque voluptatum reprehenderit temporibus dicta excepturi vitae.</p>
+    								<a href="#" class="button">read more<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
     							</div>
     						</div>
-    						<div class="top_name cliarfix">
-    							<h2>
-    								Виктор Толстиков
-    							</h2>
-    							<span class='see'>
-    								Cмотрите
-    							</span>
-    						</div>    			
+    					</div>
+    				</div>
+    			</section>
+    			<section class="we_provide">
+    				<div class="container">
+    					<div class="row">
+    						<div class="col-md-10 col-md-offset-1 section_top wow bounceInDown" data-wow-delay='.5s'>
+    							<h3>Services we prowide</h3>
+    							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, voluptas a aperiam autem fuga quod fugit ipsam deserunt explicabo minima, ad perferendis, quibusdam dolor esse possimus! Laudantium consequuntur eveniet, modi! c Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi quisquam, aspernatur, dicta eveniet voluptate consequatur.</p>
+    						</div>
+    						<div class="col-md-4 item wow fadeInUp" data-wow-delay='.7s'>
+    							<i class="fa fa-users" aria-hidden="true"></i>
+    							<h4>ConsulTancy</h4>
+    							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit recusandae suscipit numquam eveniet inventore ullam eius, quos commodi vero iusto possimus iure reiciendis alias ipsum modi vitae, doloremque, quisquam et.</p>
+    						</div>
+    						<div class="col-md-4 item wow fadeInUp" data-wow-delay='.9s'>
+    							<i class="fa fa-bullhorn" aria-hidden="true"></i>
+    							<h4>Maketing</h4>
+    							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit recusandae suscipit numquam eveniet inventore ullam eius, quos commodi vero iusto possimus iure reiciendis alias ipsum modi vitae, doloremque, quisquam et.</p>
+    						</div>
+    						<div class="col-md-4 item wow fadeInUp" data-wow-delay='1.1s'>
+    							<i class="fa fa-flask" aria-hidden="true"></i>
+    							<h4>Reaserch</h4>
+    							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit recusandae suscipit numquam eveniet inventore ullam eius, quos commodi vero iusto possimus iure reiciendis alias ipsum modi vitae, doloremque, quisquam et.</p>
+    						</div>
+    					</div>
+    				</div>
+    			</section>
+    			<section class="our_skills">
+    				<div class="wrapper">
+    					<div class="container cliarfix">
+    						<h3>Our Skills</h3>
+    						<div class="item_for_progress wow flipOutX" data-wow-delay='.3s'>
+    							<div class="containerWrap marketing">
+    								<div id="indicatorContainer"></div>   														
+    							</div>
+    							<p>Marketing</p>	
+    						</div>
+    						<div class="item_for_progress wow flipOutX" data-wow-delay='.5s'>
+    							<div class="containerWrap research">
+    								<div id="indicatorContainer"></div>   														
+    							</div>
+    							<p>Research</p>	
+    						</div>
+    						<div class="item_for_progress wow flipOutX" data-wow-delay='.7s'>
+    							<div class="containerWrap management">
+    								<div id="indicatorContainer"></div>								
+    							</div>
+    							<p>Management</p>	
+    						</div>
+    						<div class="item_for_progress wow flipOutX" data-wow-delay='.9s'>
+    							<div class="containerWrap consultancy">
+    								<div id="indicatorContainer"></div>   								
+    							</div>
+    							<p>Consultancy</p>	
+    						</div>
+    						<div class="item_for_progress wow flipOutX" data-wow-delay='1.1s'>
+    							<div class="containerWrap promotion">
+    								<div id="indicatorContainer"></div>  								
+    							</div>
+    							<p>Promotion</p>	
+    						</div>
+    					</div>
+    				</div>
+    			</section>
+    		</section>
+    		<section class="projects scrollto" id='sect_projects'>
+    			<section class="portfolio">
+    				<div class="section_head">
+    					<div class="container">
+    						<div class="row">
+    							<div class="col-md-6 col-md-offset-3 wow bounceInDown" data-wow-delay='.5s'>
+    								<h2>Some Recent Projects</h2>
+    								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam aut eius illum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, magnam.</p>
+    							</div>
+    						</div>
+    					</div>
+    				</div>
+    				<div class="container-fluid">
+    					<div class="row">
+    						<div class="col-sm-6 col-md-3 port">
+    							<img src="img/img_1.png" alt="img_1" class='img-responsive wow fadeIn' data-wow-delay="0.1s">
+    							<div class="paperClips">
+    								<div class="text">
+    									<h4>Paperclips</h4>
+    									<p class='descr'>Branding</p>
+    								</div>
+    							</div>
+    						</div>
+    						<div class="col-sm-6 col-md-3 port">
+    							<img src="img/img_2.png" alt="img_2" class='img-responsive wow fadeIn' data-wow-delay="0.3s">
+    							<div class="paperClips">
+    								<div class="text">
+    									<h4>Paperclips</h4>
+    									<p class='descr'>Branding</p>
+    								</div>
+    							</div>
+    						</div>
+    						<div class="col-sm-6 col-md-3 port">
+    							<img src="img/img_3.png" alt="img_3" class='img-responsive wow fadeIn' data-wow-delay="0.5s">
+    							<div class="paperClips">
+    								<div class="text">
+    									<h4>Paperclips</h4>
+    									<p class='descr'>Branding</p>
+    								</div>
+    							</div>
+    						</div>
+    						<div class="col-sm-6 col-md-3 port">
+    							<img src="img/img_4.png" alt="img_4" class='img-responsive wow fadeIn' data-wow-delay="0.7s">
+    							<div class="paperClips">
+    								<div class="text">
+    									<h4>Paperclips</h4>
+    									<p class='descr'>Branding</p>
+    								</div>
+    							</div>
+    						</div>
+    					</div>
+    				</div>
+    			</section>
+    			<section class="latest_twits wow fadeInUp" data-wow-duration="2s">
+    				<div class="container">
+    					<div class="row">
+    						<div class="col-md-8 col-md-offset-2">
+    							<h4>Latest from twitter</h4>
+    							<p>Trying out velositey - a simple website building extension for Photoshop <span>.</span></p>
+    							<a href="#" class='link'>buff.ly/NC8gog</a>
+    						</div>
+    					</div>
+    				</div>
+    			</section>
+    			<section class="portfolio">
+    				<div class="container-fluid">
+    					<div class="row">
+    						<div class="col-sm-6 col-md-3 port">
+    							<img src="img/img_5.png" alt="img_5" class='img-responsive wow fadeIn' data-wow-delay="1.5s">
+    							<div class="paperClips">
+    								<div class="text">
+    									<h4>Paperclips</h4>
+    									<p class='descr'>Branding</p>
+    								</div>
+    							</div>
+    						</div>
+    						<div class="col-sm-6 col-md-3 port">
+    							<img src="img/img_6.png" alt="img_6" class='img-responsive wow fadeIn' data-wow-delay="1.3s">
+    							<div class="paperClips">
+    								<div class="text">
+    									<h4>Paperclips</h4>
+    									<p class='descr'>Branding</p>
+    								</div>
+    							</div>
+    						</div>
+    						<div class="col-sm-6 col-md-3 port">
+    							<img src="img/img_7.png" alt="img_7" class='img-responsive wow fadeIn' data-wow-delay="1.1s">
+    							<div class="paperClips">
+    								<div class="text">
+    									<h4>Paperclips</h4>
+    									<p class='descr'>Branding</p>
+    								</div>
+    							</div>
+    						</div>
+    						<div class="col-sm-6 col-md-3 port">
+    							<img src="img/img_8.png" alt="img_8" class='img-responsive wow fadeIn' data-wow-delay="0.9s">
+    							<div class="paperClips">
+    								<div class="text">
+    									<h4>Paperclips</h4>
+    									<p class='descr'>Branding</p>
+    								</div>
+    							</div>
+    						</div>
+    					</div>
+    				</div>
+    				<div class="container see_all">
+    					<a href="#" class="button">See All<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+    				</div>
+    			</section>   			
+    		</section>
+    		<section class="our_team scrollto" id='sect_our_team'>
+    			<div class="team">
+    				<div class="section_head wow bounceInDown" data-wow-delay='.3s'>
+    					<div class="container">
+    						<div class="row">
+    							<div class="col-md-6 col-md-offset-3">
+    								<h2>Our team members</h2>
+    								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam aut eius illum.</p>
+    							</div>
+    						</div>
+    					</div>
+    				</div>
+    				<div class="container">
+    					<div class="row">
+    						<div class="col-md-4 item" >
+    							<div class="wrap wow fadeInDown" data-wow-delay="0.5s">
+    								<img src="img/Mitchell.png" alt="Michell" class="img-responsive">
+    								<div class="links">
+    									<div class="wrapper">
+    										<a href="#" class='social tw'><i class="fa fa-twitter" aria-hidden="true"></i></a>
+    										<a href="#" class='social fb'><i class="fa fa-facebook" aria-hidden="true"></i></a>
+    										<a href="#" class='social in'><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+    									</div>
+    								</div>
+    							</div>
+    							<div class="descr">
+    								<p class="name">Mitchell Anderson</p>
+    								<p class="position">Creative Director</p>
+    							</div>
+    						</div>
+    						<div class="col-md-4  item">
+    							<div class="wrap wow fadeInDown"  data-wow-delay="0.7s">
+    								<img src="img/Mitchell.png" alt="Michell" class="img-responsive">
+    								<div class="links">
+    									<div class="wrapper">
+    										<a href="#" class='social tw'><i class="fa fa-twitter" aria-hidden="true"></i></a>
+    										<a href="#" class='social fb'><i class="fa fa-facebook" aria-hidden="true"></i></a>
+    										<a href="#" class='social in'><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+    									</div>
+    								</div>
+    							</div>
+    							<div class="descr">
+    								<p class="name">Mitchell Anderson</p>
+    								<p class="position">Creative Director</p>
+    							</div>
+    						</div>
+    						<div class="col-md-4 item" >
+    							<div class="wrap wow fadeInDown" data-wow-delay="0.9s">
+    								<img src="img/Mitchell.png" alt="Michell" class="img-responsive">
+    								<div class="links">
+    									<div class="wrapper">
+    										<a href="#" class='social tw'><i class="fa fa-twitter" aria-hidden="true"></i></a>
+    										<a href="#" class='social fb'><i class="fa fa-facebook" aria-hidden="true"></i></a>
+    										<a href="#" class='social in'><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+    									</div>
+    								</div>
+    							</div>
+    							<div class="descr">
+    								<p class="name">Mitchell Anderson</p>
+    								<p class="position">Creative Director</p>
+    							</div>
+    						</div>
     					</div>
     				</div>
     			</div>
-    			<div class="bottom_header">
+    			<section class="client_saying">
+    				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    					<div class="carousel-inner" role="listbox">
+    						<div class="item active">
+    							<div class="caption">
+    								<div class="container">
+    									<div class="col-md-6 col-md-offset-3">
+    										<h3>What Our Clients are saying</h3>
+    										<blockquote>"It was a pleasure to work with Imran. He is very dedicated and the communication was great"</blockquote>
+    										<p class="autor">John Doe</p>
+    										<a href="#" class='link'>www.yourwebsite.zt</a>
+    									</div>
+    								</div>
+    							</div>
+    						</div>
+    						<div class="item">
+    							<div class="caption">
+    								<div class="container">
+    									<div class="col-md-6 col-md-offset-3">
+    										<h3>What Our Clients are saying</h3>
+    										<blockquote>"It was a pleasure to work with Imran. He is very dedicated and the communication was great"</blockquote>
+    										<p class="autor">John Doe</p>
+    										<a href="#" class='link'>www.yourwebsite.zt</a>
+    									</div>
+    								</div>
+    							</div>
+    						</div>
+    						<div class="item">
+    							<div class="caption">
+    								<div class="container">
+    									<div class="col-md-6 col-md-offset-3">
+    										<h3>What Our Clients are saying</h3>
+    										<blockquote>"It was a pleasure to work with Imran. He is very dedicated and the communication was great"</blockquote>
+    										<p class="autor">John Doe</p>
+    										<a href="#" class='link'>www.yourwebsite.zt</a>
+    									</div>
+    								</div>
+    							</div>    						
+    						</div>
+    						<ol class="carousel-indicators">
+    							<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    							<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    							<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    						</ol>
+    					</div>
+    				</div>
+    			</section>
+    		</section>
+    		<section class="our_blog scrollto" id='sect_our_blog'>
+    			<div class="section_head wow bounceInDown" data-wow-delay='.3s'>
     				<div class="container">
     					<div class="row">
-    						<div class="col-md-7 for_border">
-    							<iframe width="100%" height="470" src=https://www.youtube.com/embed/aVyRunPj5JE
-    							frameborder="0" allowfullscreen></iframe>
-    						</div>
-    						<div class="col-md-5 for_form">
-    							<form method='post' class="form">
-    								<p><input type="email" class='field' placeholder="Введите ваш email" required></p>
-    								<p><input type="tel" class='field' placeholder="Введите ваш номер телефона" required></p>
-    								<input type="submit" value='Принять участие' class='button'>
-    							</form>
-    							<div class="bonus">
-    								<span class='write'>Запишитесь сейчас <br>и получите</span>
-    								<p class='top'>Бонус:</p>
-    								<p class='bottom'>
-    									Медитация-сопровождение - <br> "настройка на везение"
-    								</p>
-    							</div>
+    						<div class="col-md-6 col-md-offset-3">
+    							<h2>Our blog</h2>
+    							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam aut eius illum.</p>
     						</div>
     					</div>
     				</div>
     			</div>
-    		</header>
-    		<main>
-    			<section class="problems_solution">
-    				<div class="header_one">
-    					<div class="container">
-    						<div class="row">
-    							<img src="img/cloud.png" alt="cloud">
-    							<h3>Проблемы:</h3>
-    						</div>
-    					</div>
-    				</div>
-    				<div class="block_list">
-    					<div class="container">
-    						<div class="row">
-    							<ul class='list'>
-    								<li>
-    									Постоянные неудачи в личной жизни и Хроническая нехватка денег
-    								</li>
-    								<li>
-    									Ощущение "Я заслуживаю другой учести" - что-то всё время мешает счастью
-    								</li>
-    								<li>
-    									Синдром хронической усталости, стресс, невозможность раскрыть свой потенциал
-    								</li>
-    								<li>
-    									Избыточный вес, курение, алкоголь, страх болезни и смерти рушат    жизнь
-    								</li>
-    								<li>
-    									Надоело быть обманутым и тем, кем все пользуются безвозмездно
-    								</li>
-    							</ul>
-    						</div>
-    					</div>
-    				</div>
-    				<div class="header_second">
-    					<div class="container">
-    						<div class="row">
-    							<h3>Благодаря этому интенсиву, Вы узнаете:</h3>
-    							<img src="img/cloud_2.png" alt="cloud">  						
-    						</div>
-    					</div>
-    				</div>
-    				<div class="block_list_second">
-    					<div class="container">
-    						<div class="row">
-    							<ul class='list'>
-    								<li>
-    									Как привлечь любовь и богатство в свою жизнь с помощью простых медитаций
-    								</li>
-    								<li>
-    									Как найти своё предназначение и обрести счастье, просто        прислушавшись к своему сердцу и душе
-    								</li>
-    								<li>
-    									Как продлить молодость и раскрыть в себе необычные способности с помощью простых аффирмаций
-    								</li>
-    								<li>
-    									Как похудеть на 12 кг за 3 недели или избавиться от вредных привычек         с помощью безопасных технологий аудио-визуального кодирования
-    								</li>
-    								<li>
-    									Как манипулировать людьми с помощью секретных технологий влияния спецслужб мира
-    								</li>
-    							</ul>
-    						</div>
-    					</div>
-    				</div>
-    				<div class="button_wrap">
-    					<div class="container">
-    						<div class="row">
-    							<a href="#modal" class="btn">Участвовать в интенсиве</a>
-    						</div>
-    					</div>
-    				</div>
-    			</section>
-    			<section class="marathon">
-    				<div class="header">
-    					<div class="container">
-    						<div class="row">
-    							<h3>Содержание онлайн марафона:</h3>
-    						</div>
-    					</div>
-    				</div>
-    				<div class="day day_1">
-    					<div class="container">
-    						<div class="row">
-    							<h4>День <span>1</span></h4>
-    							<div class="info cliarfix">
-    								<div class="icon">
-    									<img src="img/day_1.png" alt="day_1" class='img-responsive'>
-    								</div>
-    								<p class='descr'>
-    									Медитация как ключ к обретению материального благополучия и удачи вличной жизни
-    								</p>
-    							</div>
-    							<ol class='list'>
-    								<li>
-    									Почему не работает 95% медитаций и что нужно для того, чтобы они сработали
-    								</li>
-    								<li>
-    									Что такое медитация с научной точки зрения, о чем молчат "гуру"
-    								</li>
-    								<li>
-    									Главный секрет управления реальностью, который воплощает сокровенные 
-    								</li>
-    							</ol>   						
-    						</div>
-    					</div>
-    					<div class="practice">
-    						<div class="container">
-    							<div class="row">
-    								<p>Практика: <span>Очищающая медитация</span></p>
-    							</div>
-    						</div>
-    					</div>
-    				</div>
-
-    				<div class="day day_2">
-    					<div class="container">
-    						<div class="row">
-    							<h4>День <span>2</span></h4>
-    							<div class="info cliarfix">
-    								<div class="icon">
-    									<img src="img/day_2.png" alt="day_2" class='img-responsive'>
-    								</div>
-    								<p class='descr'>
-    									Глубокая релаксация для налаживания контакта со своим “Высшим Я” и подсознанием
-    								</p>
-    							</div>
-    							<ol class='list'>
-    								<li>
-    									"Самый простой способ избавления от стресса и мышечных зажимов
-    								</li>
-    								<li>
-    									Технология просветления для ленивых (лёжа на диване)
-    								</li>
-    								<li>
-    									Что такое ""внутренний голос"" и как его услышать" 
-    								</li>
-    							</ol>   						
-    						</div>
-    					</div>
-    					<div class="practice">
-    						<div class="container">
-    							<div class="row">
-    								<p>Практика <span>глубокой релаксации</span></p>
-    							</div>
-    						</div>
-    					</div>
-    				</div>
-
-    				<div class="day day_3">
-    					<div class="container">
-    						<div class="row">
-    							<h4>День <span>3</span></h4>
-    							<div class="info cliarfix">
-    								<div class="icon">
-    									<img src="img/day_3.png" alt="day_3" class='img-responsive'>
-    								</div>
-    								<p class='descr'>
-    									Аффирмации для активации скрытых резервов организма
-    								</p>
-    							</div>
-    							<ol class='list'>
-    								<li>
-    									"За счет чего мы сами себе постоянно портим жизнь
-    								</li>
-    								<li>
-    									Как с помощью простых слов улучшить своё настроение и самочувствие
-    								</li>
-    								<li>
-    									Как запрограммировать себя на раскрытие сверх способностей"
-    								</li>
-    							</ol>   						
-    						</div>
-    					</div>
-    					<div class="practice">
-    						<div class="container">
-    							<div class="row">
-    								<p>Практика: <span> "Гармонизирующая "мантра"</span></p>
-    							</div>
-    						</div>
-    					</div>
-    				</div>
-
-    				<div class="day day_4">
-    					<div class="container">
-    						<div class="row">
-    							<h4>День <span>4</span></h4>
-    							<div class="info cliarfix">
-    								<div class="icon">
-    									<img src="img/day_4.png" alt="day_4" class='img-responsive'>
-    								</div>
-    								<p class='descr'>
-    									Технология аудио-визуального кодирования для снижения веса и избавления от вредных привычек 
-    								</p>
-    							</div>
-    							<ol class='list'>
-    								<li>
-    									"Что такое аудио-визуальное кодирование и как оно работает
-    								</li>
-    								<li>
-    									Как худеть легко и с пользой для здоровья, без супер нагрузок
-    								</li>
-    								<li>
-    									Что сделать, чтобы преодолеть тягу к вредным продуктам"
-    								</li>
-    							</ol>   						
-    						</div>
-    					</div>
-    					<div class="practice">
-    						<div class="container">
-    							<div class="row">
-    								<p>Практика: <span>Настройка на процесс похудения</span></p>
-    							</div>
-    						</div>
-    					</div>
-    				</div>
-
-    				<div class="day day_5">
-    					<div class="container">
-    						<div class="row">
-    							<p class="vip">
-    								VIP День
-    							</p>
-    							<h4>День <span>5</span></h4>
-    							<div class="info cliarfix">
-    								<div class="icon">
-    									<img src="img/day_5.png" alt="day_5" class='img-responsive'>
-    								</div>
-    								<p class='descr'>
-    									Гипнотические психотехнологии влияния для воздействия на окружающих
-    								</p>
-    							</div>
-    							<ol class='list'>
-    								<li>
-    									"Разговорный гипноз и речевые техники подчинения и убеждения
-    								</li>
-    								<li>
-    									Технологии невербального воздействия на человека и получение желаемого
-    								</li>
-    								<li>
-    									Развитие телевании и дистанционное внушение образов
-    									<a href="#modal" class="btn_2">Получить доступ</a>
-    								</li>
-    							</ol>   						
-    						</div>
-    					</div>
-    					<div class="practice">
-    						<div class="container">
-    							<div class="row">
-    								<p>Практика: <span>Простейшие техники манипуляции</span></p>
-    							</div>
-    						</div>
-    					</div>
-    				</div>
-    			</section>
-    			<section class="who">
-    				<div class="wrapper_top">
-    					<div class="container">
-    						<div class="row">
-    							<div class="button_wrap">
-    								<a href="#modal" class="btn">Участвовать в интенсиве</a>
-    							</div>
-    							<h4>Кто ведет марафон</h4>
-    							<div class="col-xs-4 item item_one">
-    								<p class="first">
-    									<span>Генеральный продюсер</span><br> крупнейшего центра развития человека
-    								</p>
-    								<p class="second">
-    									<span>Мастер-практик</span> по нейро-логическому программированию
-    								</p>
-    								<p class="third">
-    									Исследователь мест силы и <span>паранормальных</span> феноменов
-    								</p>
-    								<p class="fourth">
-    									Постоянный гость на ведущих российских <span>телеканалах</span>
-    								</p>
-    							</div>
-    							<div class="col-xs-4 item item_second">
-    								<img src="img/viktor.png" alt="Viktor_Tolstikov" class='img-responsive'>
-    							</div>
-    							<div class="col-xs-4 item item_third">
-    								<p class="first">
-    									Тренер специализированных программ <span>международного уровня</span>
-    								</p>
-    								<p class="second">
-    									Инструктор по славянской системе <span>“Ведасонь”</span>
-    								</p>
-    								<p class="third">
-    									<span>Эксперт</span> по технологиям влияния и массовой коммуникации
-    								</p>
-    								<p class="viktor">Виктор Толстиков</p>
-    							</div>
-    						</div>
-    					</div>
-    				</div>
-    				<div class="story">
-    					<div class="container">
-    						<div class="row">
-    							<div class="wrap">
-    								<p>
-    									Виктор из той редкой породы экспертов, которые не любят цитировать книги и абстрактные теории, а деляться только своим практическим опытом и той информацией, которая даёт желаемые результаты в реальной жизни. 
-    								</p>
-    								<p>
-    									Так, например, Виктор в 19 лет самостоятельно смог избавиться от тяжелого недуга с помощью самогипноза. А благодаря своей авторской методике сумел похудеть на 23 кг за одно лето. Покончил с алкоголем и табаком, после более чем 10 лет злоупотреблений.
-    								</p>
-    								<p>
-    									Много времени провёл в путешествиях по местам силы, пол года прожил в юго-восточной азии, учился у хранителей различных традиций и культов (шаманизм, магия, ведовство, суфизм, славянская и индийская йога и многое другое) 
-    								</p>
-    								<p>
-    									Благодаря своему богатейшему опыту и уникальным знаниям знаниям Виктор помог сотням людей на “живых” мероприятиях и тысячам человек в интернете, раскрыть потенциал, улучшить качество жизни и воплотить сокровенные мечты в реальность.
-    								</p>
-    							</div>
-    						</div>
-    					</div>
-    				</div>
-    			</section>
-    			<section class="slider">
-    				<div class="container">
-    					<div class="row">
-    						<h4>Отзывы учеников</h4>
-    						<div class="slides">
-    							<div class="slide">
-    								<div class="wrap">
-    									<p>
-    										<span class='anton'>Антон Фивер</span>
-    										<span class='date'>
-    											20 ноября 2016 в 20:06
-    										</span>
-    									</p>
-    									<p class='text'>
-    										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur labore veniam quia recusandae perferendis eveniet aliquid natus, sapiente qui, hic a. In dolores distinctio quibusdam quas, minus molestiae nam suscipit.
-    										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem beatae officiis optio laboriosam dolor laborum quam quod, corporis quia et?
-    									</p>
-    								</div>
-    								<a href="#" class='answer'>Ответить</a>
-    							</div>
-    							<div class="slide">
-    								<div class="wrap">
-    									<p>
-    										<span class='anton'>Антон Фивер</span>
-    										<span class='date'>
-    											20 ноября 2016 в 20:06
-    										</span>
-    									</p>
-    									<p class='text'>
-    										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur labore veniam quia recusandae perferendis eveniet aliquid natus, sapiente qui, hic a. In dolores distinctio quibusdam quas, minus molestiae nam suscipit.
-    										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat repellat optio ratione perspiciatis reiciendis, enim corporis quaerat! Vitae, perferendis, rem.
-    									</p>
-    								</div>
-    								<a href="#" class='answer'>Ответить</a>
-    							</div>
-    							<div class="slide">
-    								<div class="wrap">
-    									<p>
-    										<span class='anton'>Антон Фивер</span>
-    										<span class='date'>
-    											20 ноября 2016 в 20:06
-    										</span>
-    									</p>
-    									<p class='text'>
-    										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur labore veniam quia recusandae perferendis eveniet aliquid natus, sapiente qui, hic a. In dolores distinctio quibusdam quas, minus molestiae nam suscipit.
-    										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum similique expedita pariatur nostrum fuga sed quia quos rerum possimus quae?
-    									</p>
-    								</div>
-    								<a href="#" class='answer'>Ответить</a>
-    							</div>
-    						</div>
-    					</div>
-    				</div>
-    				<div class="button_wrap">
-    					<div class="container">
-    						<div class="row">
-    							<a href="#modal" class="btn">Участвовать в интенсиве</a>
-    						</div>
-    					</div>
-    				</div>
-    			</section>
-    		</main>
-    		<footer class='footer'>
     			<div class="container">
     				<div class="row">
-    					<div class="wrap cliarfix">
-    						<p>
-    							Хотите узнать больше? Вступайте в наши группы!
-    						</p>
-    						<ul class='social'>
-    							<li><a href="#" class='icon fb'></a></li>
-    							<li><a href="#" class='icon in'></a></li>
-    							<li><a href="#" class='icon vk'></a></li>
-    							<li><a href="#" class='icon tube'></a></li>
-    							<li><a href="#" class='icon tw'></a></li>
+    					<div class="col-sm-12 col-md-6 item right for_bord_right wow fadeInUp" data-wow-delay='.4s'>
+    						<ul class="bxslider">
+    							<li><img src="img/slide.png"  class='img-responsive'/></li>
+    							<li><img src="img/slide.png" class='img-responsive'/></li>
+    							<li><img src="img/slide.png" class='img-responsive'/></li>
     						</ul>
+    					</div>
+    					<div class="col-sm-12 col-md-6 item left wow fadeInUp" data-wow-delay='.5s'>
+    						<div class="ellipse"></div>
+    						<article>
+    							<p class="date">10 April 2014</p>
+    							<h3>Typi non habent claritatem insitam</h3>
+    							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam tenetur corrupti dolores velit perspiciatis iusto nulla ratione maxime, quibusdam, quidem, sunt praesentium nostrum consequatur id <span>[...]</span></p>
+    						</article>
+    					</div>
+    					<div class="clear"></div>
+    					<div class="col-sm-12 col-md-6 item right wow fadeInUp" data-wow-delay='.6s'>    					
+    						<article>
+    							<p class="date">20 March 2014</p>
+    							<h3>Typi non habent claritatem insitam</h3>
+    							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam tenetur corrupti dolores velit perspiciatis iusto nulla ratione maxime, quibusdam, quidem, sunt praesentium nostrum consequatur id <span>[...]</span></p>
+    						</article>
+    					</div>
+    					<div class="col-sm-12 col-md-6 item left for_bord_left wow fadeInUp" data-wow-delay='.7s'>
+    						<div class="ellipse"></div>
+    						<img src="img/slide.png" alt="slide" class='img-responsive'>
+    					</div>
+    					<div class="col-sm-12 col-md-6 item right for_bord_right lastPhoto wow fadeInUp" data-wow-delay='.8s'>
+    						<img src="img/slide.png" alt="slide" class='img-responsive'>
+    						<div class="all_post">All Post</div>
+    					</div>
+    					<div class="col-sm-12 col-md-6 item left lastPost wow fadeInUp" data-wow-delay='.9s'>
+    						<div class="ellipse"></div>
+    						<article>
+    							<p class="date">20 March 2014</p>
+    							<h3>Typi non habent claritatem insitam</h3>
+    							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam tenetur corrupti dolores velit perspiciatis iusto nulla ratione maxime, quibusdam, quidem, sunt praesentium nostrum consequatur id <span>[...]</span></p>
+    						</article>
     					</div>
     				</div>
     			</div>
-    		</footer>
-    		<div class="modal_window remodal" data-remodal-id="modal">
-    			<button data-remodal-action="close" class="remodal-close"></button>
-    			<form  method='post' class="form">
-    				<p><input type="email" class='field' placeholder="Введите ваш email" required></p>
-    				<p><input type="tel" class='field' placeholder="Введите ваш номер телефона" required></p>
-    				<input type="submit" value='Принять участие' class='button'>
-    			</form>
-    		</div>
-    		<div class="pre_loader">
-    			<div class="loader">
-    				<div class="wrap"> 
-    					<div class="bar1"></div> 
-    					<div class="bar2"></div> 
-    					<div class="bar3"></div> 
-    					<div class="bar4"></div> 
-    					<div class="bar5"></div> 
-    					<div class="bar6"></div> 
-    					<div class="bar7"></div> 
-    					<div class="bar8"></div>
-    					<div class="bar7"></div> 
-    					<div class="bar8"></div>
-    					<div class="bar9"></div> 
-    					<div class="bar10"></div>
+    		</section>
+    		<section class="contact wow zoomIn scrollto" data-wow-delay='.3s' id='sect_contact'>
+    			<div class="container">
+    				<div class="row">
+    					<div class="col-md-8 col-md-offset-2">
+    						<h2>Contact</h2>
+    						<form action="#" method='post'>
+    							<input type="text" class="form" placeholder="Name*">
+    							<input type="email" class="form" placeholder="Email*" required aria-required="true">
+    							<textarea class="form">Message...</textarea>
+    							<div class="for_line"></div>
+    							<button type="submit" class='button'>Submit</button>
+    						</form>
+    					</div>
+    				</div>
+    			</div>
+    		</section>
+    	</main>
+    	<footer>
+    		<div class="footer_top">
+    			<div class="container">
+    				<div class="row">
+    					<div class="col-sm-6 col-md-3">
+    						<a href="#" class='logo'><img src="img/logo_2.png" alt="logo"></a>
+    						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque modi, repellat perferendis, praesentium ipsum illum ab, officiis necessitatibus tempore facere sunt sint ut pariatur quos!</p>
+    						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est magni quos quisquam, libero sunt, laborum, eum dolorum voluptate, voluptas officia consequatur veniam aut perferendis fuga nostrum aspernatur. Ratione accusamus aperiam voluptate ex in alias sequi.</p>
+    					</div>
+    					<div class="col-sm-6 col-md-3 item ">
+    						<h4>Recent Posts</h4>
+    						<article>
+    							<p class="date">March 30, 2014</p>
+    							<p>Duis autem vel eum iriure dolor.</p>
+    						</article>
+    						<article>
+    							<p class="date">March 30, 2014</p>
+    							<p>Duis autem vel eum iriure dolor.</p>
+    						</article>
+    						<article>
+    							<p class="date">March 30, 2014</p>
+    							<p>Duis autem vel eum iriure dolor</p>
+    						</article>
+    					</div>
+    					<div class="col-sm-6 col-md-3 item ">
+    						<h4>Twitter Feeds</h4>
+    						<article>
+    							<p class="time">about 2 days ago<a href="mailto"> @Kristianplatt</a></p>
+    							<p class="text">Good Work Buddy</p>
+    						</article>
+    						<article>
+    							<p class="time">about 2 days ago<a href="mailto"> @Kristianplatt</a></p>
+    							<p class="text">Good Work Buddy</p>
+    						</article>
+    						<article>
+    							<p class="time">about 2 days ago<a href="mailto"> @Kristianplatt</a></p>
+    							<p class="text">Good Work Buddy</p>
+    						</article>
+    					</div>
+    					<div class="col-sm-6 col-md-3 item">
+    						<h4>Our Address</h4>
+    						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, nihil, libero! Debitis eveniet accusamus ea ad, illum, vitae neque sunt, ratione suscipit doloremque repudiandae odio aspernatur optio in praesentium numquam.</p>
+    						<address>
+    							<p><i class="fa fa-map-marker" aria-hidden="true"></i>Moonshine St. 14/05 Light, Jupiter</p>
+    							<p><i class="fa fa-phone" aria-hidden="true"></i>+00 (123) 456 78 90</p>
+    							<p><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto">first.last@email.com</a></p>
+    						</address>	
+    					</div>
     				</div>
     			</div>
     		</div>
-    	</div>
+    		<div class="footer_bottom">
+    			<div class="container">
+    				<p class="copy">
+    					&copy;2014 Imran Khan All Rights Reserved
+    				</p>
+    			</div>
+    		</div>
+    	</footer>
     	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     	<!-- Include all compiled plugins (below), or include individual files as needed -->
-    	<script src="js/remodal.min.js"></script>
-    	<script src="js/slick.min.js"></script>
-    	<script src='js/common.js'></script
-    	</body>
-    	</html>
+    	<script src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js'></script>
+    	<script src="js/jquery.easing.min.js"></script>
+    	<script src="js/jquery.stickyNavbar.min.js"></script>
+    	<script src="js/bootstrap.js"></script>
+    	<script src='js/radialIndicator.js'></script>
+    	<script src='js/jquery.bxslider.js'></script>
+    	<script src='js/script.js'></script>
+    	<script>
+    	</script>
+    </body>
+    </html>
