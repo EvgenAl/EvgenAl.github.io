@@ -1,0 +1,16 @@
+/*========================MIXINS==========================*/
+
+
+@mixin Font($name){
+  font-family: 'fontawesome-webfont';
+  src: url('../fonts/#{$name}.eot'); /*#{$name} - экранирование переменной*/
+  src: url('../fonts/#{$name}.eot?#iefix') format('embedded-opentype'), 
+       url('../fonts/#{$name}.woff2') format('woff2'),
+       url('../fonts/#{$name}.woff') format('woff'), 
+       url('../fonts/#{$name}.ttf')  format('truetype'), 
+       url('../fonts/#{$name}.svg#svgFontName') format('svg');
+}
+
+@mixin backGround($color, $img, $repeat, $x, $y, $size){
+background:$color url(../img/#{$img}.png) $repeat $x $y $size;
+}

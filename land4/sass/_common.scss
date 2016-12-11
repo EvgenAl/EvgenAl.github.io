@@ -1,0 +1,103 @@
+/*=====================COMMON STYLES======================*/
+
+@font-face{
+	@include Font('fontawesome-webfont');
+}
+
+body{
+	min-width: 300px;
+	font-family: $font-family;
+}
+
+section{
+	position: relative;
+}
+article{
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(0, 0, 0, 0.03);
+	z-index:100;
+}
+
+h1{
+	margin: 0;
+}
+
+.top{
+	text-align: center;
+	h2{
+		font-family: RobotoCondensed, sans-serif;
+		font-size: 29px;
+		font-weight: 400;
+		margin-bottom: 0;
+	}
+
+	p{
+		font-size: 17px;
+		font-weight: 400;
+		margin:10px 0 50px 0;
+	}
+}
+a{
+	text-decoration: none;
+	&:hover{
+		text-decoration: none;
+	}
+}
+
+input[type=submit]{
+	border:none;
+}
+
+.btn{
+	color: white;
+	font-size: 21px;
+	font-weight: 400;
+	padding:12px 25px;
+	background-color: #00bfe8;
+	border-radius: 5px;
+	box-shadow: 0 3px 6px rgba(38, 50, 56, 0.13), 0 0 5px rgba(0, 0, 0, 0.03);
+	transition:all .4s ease-out;
+	display: inline-block;
+	&:hover{
+		background: #009ac2;
+	}
+	@media(max-width:640px){
+		font-size: 18px;
+		font-weight: 400;
+		padding:12px;
+	}
+}
+
+.cliarfix:before,
+.cliarfix:after {
+	content: "";
+	display: table;
+}
+
+.cliarfix:after {
+	clear: both;
+}
+
+.cliarfix {
+	clear: both;
+}
+
+.clear{
+	clear:both;
+	@media(max-width:991px){
+		display: none;
+	}
+}
+
+.img-responsive{
+	width:100%;
+	height: auto;
+}
+
+.wrap{
+	max-width:830px;
+	margin: 0 auto;
+}
+
+
+
+
