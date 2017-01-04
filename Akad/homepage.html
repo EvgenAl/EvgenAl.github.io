@@ -277,5 +277,33 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.1/isotope.pkgd.js'></script>
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
 <script src="js/main.js"></script>
+<script>
+		var sizer = '.sizer_3';
+	var $grid = $('.isotope').isotope({
+		itemSelector : '.grid_item',
+		layoutMode: 'masonry',
+		masonry: {
+			columnWidth:sizer,
+			percentPosition: true
+		}
+	});
+
+$grid.imagesLoaded().progress( function() {
+  $grid.isotope('layout');
+});
+
+	var $container = $('.isotope');
+	$('#filters li').click(function(){
+		var $this = $(this);
+        // don't proceed if already selected
+        if ( !$this.hasClass('is-checked') ) {
+        	$this.parents('#options').find('.is-checked').removeClass('is-checked');
+        	$this.addClass('is-checked');
+        }
+        var selector = $this.attr('data-filter');
+        $container.isotope({  itemSelector: '.grid_item', filter: selector });
+        return false;
+      }); 
+</script>
 </body>
 </html>
