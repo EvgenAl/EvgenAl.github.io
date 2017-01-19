@@ -147,12 +147,53 @@ a:hover {
   }
 }
 
+/*=========loader=========*/
+.wrap_loader {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(48, 48, 48, 0.6);
+}
+.wrap_loader .wrap_block {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+@-webkit-keyframes loading {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes loading {
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.wrap_loader #loading {
+  width: 60px;
+  height: 60px;
+  border-radius: 60%;
+  background: transparent;
+  border-top: 6px solid #fff;
+  border-right: 6px solid #fff;
+  border-bottom: 6px solid #777;
+  border-left: 6px solid #777;
+  -webkit-animation: loading 1.2s infinite linear;
+  animation: loading 1.2s infinite linear;
+}
+
 .header {
   width: 100%;
 }
 
 .navigation {
   background: #303030;
+  min-height: 85px;
 }
 .navigation .navbar-header h1 {
   margin: 15px 0;
@@ -166,6 +207,7 @@ a:hover {
   margin-top: 15px;
   padding: 9px 12px;
   background: #7b6c63;
+  border-radius: 18px/10px;
 }
 .navigation .navbar-nav {
   margin: 15px 0;
@@ -212,14 +254,19 @@ a:hover {
   color: white;
   font-weight: 400;
 }
+@media (max-width: 991px) {
+  .banner p {
+    font-size: 55px;
+  }
+}
 @media (max-width: 767px) {
   .banner p {
-    font-size: 60px;
+    font-size: 45px;
   }
 }
 @media (max-width: 600px) {
   .banner p {
-    font-size: 50px;
+    font-size: 40px;
     line-height: 55px;
   }
 }
@@ -245,13 +292,45 @@ a:hover {
   margin-top: 70px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 3px;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-animation: scaling 1.2s 2s linear;
+  animation: scaling 1.2s 2s linear;
+}
+@-webkit-keyframes scaling {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1.25);
+    transform: scale(1.25);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes scaling {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1.25);
+    transform: scale(1.25);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
 }
 .banner .fa {
   display: inline-block;
   margin-left: 10px;
 }
 
-/*===============================About us====================================*/
 .about_us {
   padding-bottom: 0;
 }
@@ -375,7 +454,6 @@ a:hover {
   padding: 5px;
 }
 
-/*=============================================Portfolio===================================================*/
 .projects {
   padding-bottom: 90px;
 }
@@ -383,6 +461,7 @@ a:hover {
   padding: 0;
 }
 .projects .portfolio .port {
+  cursor: pointer;
   padding: 0;
   position: relative;
 }
@@ -457,7 +536,6 @@ a:hover {
   margin-left: 10px;
 }
 
-/*=======================================Our_Team=========================================*/
 .our_team {
   padding-bottom: 0;
   background: #f5f5f5;
@@ -465,6 +543,9 @@ a:hover {
 
 .team {
   padding-bottom: 90px;
+}
+.team .item {
+  cursor: pointer;
 }
 @media (max-width: 992px) {
   .team .item {
@@ -586,7 +667,6 @@ a:hover {
   width: auto;
 }
 
-/*=======================================Our Blog================================================*/
 @media (max-width: 991px) {
   .our_blog {
     text-align: center;
@@ -774,6 +854,7 @@ a:hover {
 }
 .contact form textarea {
   width: 100%;
+  resize: none;
 }
 .contact .for_line {
   height: 1px;

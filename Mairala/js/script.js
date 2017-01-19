@@ -91,5 +91,9 @@ $('.header').stickyNavbar();
 new WOW().init();
 
 
+	$(window).load(function() {
+		$(".wrap_loader").delay(2000).fadeOut(500);
+	}); 
+
 
 });

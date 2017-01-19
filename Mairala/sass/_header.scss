@@ -3,6 +3,7 @@
 }
 .navigation{
 	background: #303030;
+	min-height: 85px;
 	.navbar-header{
 		h1{
 			margin: 15px 0;
@@ -16,6 +17,7 @@
 			margin-top: 15px;
 			padding: 9px 12px;
 			background: #7b6c63;
+			border-radius:18px/10px;
 		}
 	}
 	.navbar-nav{
@@ -34,7 +36,7 @@
 					background: transparent;
 					color:#fff;
 				}
-			
+
 
 			}
 			@media(max-width:767px){
@@ -64,11 +66,14 @@
 		text-transform: uppercase;
 		color: white;
 		font-weight: 400;
+		@media(max-width:991px){
+			font-size:55px;
+		}
 		@media(max-width:767px){
-			font-size:60px;
+			font-size:45px;
 		}
 		@media(max-width:600px){
-			font-size:50px;
+			font-size:40px;
 			line-height: 55px;
 		}
 	}
@@ -95,6 +100,21 @@
 		margin-top:70px;
 		background-color: rgba(255, 255, 255, 0.1);
 		border-radius: 3px;
+		-webkit-transform: scale(1);
+		    -ms-transform: scale(1);
+		        transform: scale(1);
+		-webkit-animation: scaling 1.2s 2s linear;
+		        animation: scaling 1.2s 2s linear;
+	}
+	@-webkit-keyframes scaling {
+		0% {-webkit-transform: scale(0);transform: scale(0); }
+		50% {-webkit-transform: scale(1.25);transform: scale(1.25); }
+		100% {-webkit-transform: scale(1);transform: scale(1); }
+	}
+	@keyframes scaling {
+		0% {-webkit-transform: scale(0);transform: scale(0); }
+		50% {-webkit-transform: scale(1.25);transform: scale(1.25); }
+		100% {-webkit-transform: scale(1);transform: scale(1); }
 	}
 	.fa{
 		display: inline-block;
