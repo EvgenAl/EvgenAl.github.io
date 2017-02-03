@@ -4461,6 +4461,7 @@ a.effect-underline:hover:after {
 @media (max-width: 1199px) {
   .header .menu_top .login a .fa {
     font-size: 18px;
+    padding-right: 5px;
   }
 }
 @media (max-width: 991px) {
@@ -5134,7 +5135,7 @@ a.effect-underline:hover:after {
 .latest_posts .slider_posts .slick-prev:after {
   content: '';
   position: absolute;
-  width: 25px;
+  width: 28px;
   left: 0;
   top: 0;
   height: 33px;
@@ -5162,7 +5163,7 @@ a.effect-underline:hover:after {
 .latest_posts .slider_posts .slick-next:after {
   content: '';
   position: absolute;
-  width: 25px;
+  width: 28px;
   left: 0;
   top: 0;
   height: 33px;
