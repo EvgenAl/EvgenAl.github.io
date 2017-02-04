@@ -139,7 +139,7 @@ input, textarea {
 .header-tel__phone:after {
 	content: '';
 	position: absolute;
-	top: 5px;
+	top: 4px;
 	left: -24px;
 	background-position: 0 -184px;
 	height: 17px;
