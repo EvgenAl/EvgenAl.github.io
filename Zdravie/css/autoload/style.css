@@ -1,4 +1,4 @@
-.icons-sprite, .icons-icon01, .icons-icon02, .icons-icon03, .icons-phone, .header-tel__phone:after, .list-icons__item:nth-child(1) .icon, .list-icons__item:nth-child(2) .icon, .list-icons__item:nth-child(3) .icon {
+.icons-sprite, .icons-icon01, .icons-icon02, .icons-icon03, .icons-phone, .list-icons__item:nth-child(1) .icon, .list-icons__item:nth-child(2) .icon, .list-icons__item:nth-child(3) .icon {
 	background-image: url('../../img/icons-s0d5cfd1552.png');
 	background-repeat: no-repeat;
 }
@@ -32,6 +32,15 @@ input, textarea, select {
 
 /* WEBKIT INPUT OUTLINE */
 input, textarea {
+	outline: none;
+}
+
+button, 
+button:active, 
+button:focus,
+input:focus,
+textarea:focus,
+a:focus {
 	outline: none;
 }
 
@@ -139,11 +148,11 @@ input, textarea {
 .header-tel__phone:after {
 	content: '';
 	position: absolute;
-	top: 4px;
-	left: -24px;
-	background-position: 0 -184px;
+	top: 7px;
+	left: -21px;
 	height: 17px;
 	width: 14px;
+	background: url(../../img/icon.png) no-repeat;
 }
 .header-tel__phone-request {
 	display: inline-block;
@@ -161,7 +170,7 @@ input, textarea {
 	width: 241px;
 	height: 101px;
 	position: absolute;
-	right:15%;
+	right:21%;
 	top: 75px;
 	background-color: #0c676a;
 	z-index: 2;
@@ -1003,9 +1012,12 @@ input, textarea {
 	top: 30%;
 	margin-left: -15px;
 	margin-top: -15px;
-		background: transparent;
+	background: transparent;
 	border-top:15px solid transparent;
 	border-left:15px solid transparent;
 	border-bottom:15px solid #fff;
 	border-right:15px solid transparent;
 }
+
+
+
