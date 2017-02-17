@@ -2787,7 +2787,16 @@ input:focus {
   height: 100vh;
   padding: 3vh 0 5vh 0;
 }
-
+@media (max-width: 1350px) {
+  .wrapper {
+    background-size: cover;
+  }
+}
+@media (max-width: 991px) {
+  .wrapper {
+    height: auto;
+  }
+}
 .wrapper .brand {
   display: inline-block;
 }
@@ -2811,7 +2820,7 @@ input:focus {
 }
 @media (max-width: 500px) {
   .wrapper h1 {
-    font-size: 35px;
+    font-size: 32px;
     line-height: 40px;
   }
 }
