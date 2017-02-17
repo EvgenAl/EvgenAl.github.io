@@ -2783,15 +2783,11 @@ input:focus {
 
 .wrapper {
   background: url(../img/bg.png) no-repeat center;
-  background-size: 100vw 100vh;
+  background-size: cover;
   height: 100vh;
   padding: 3vh 0 5vh 0;
 }
-@media (max-width: 1350px) {
-  .wrapper {
-    background-size: cover;
-  }
-}
+
 .wrapper .brand {
   display: inline-block;
 }
