@@ -2783,7 +2783,7 @@ input:focus {
 
 .wrapper {
   background: url(../img/bg.png) no-repeat center;
-  background-size: cover;
+  background-size: 100vw 100vh;
   height: 100vh;
   padding: 3vh 0 5vh 0;
 }
