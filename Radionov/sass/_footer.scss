@@ -1,0 +1,62 @@
+.footer{
+	padding: 24px 0;
+	background: url(../img/background/bg_6.2.png) no-repeat;
+	background-size: cover;
+	.content{
+		display:-webkit-flex;
+		display:-ms-flexbox;
+		display:flex;
+		-webkit-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		-webkit-justify-content: space-between;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+		-webkit-align-items: center;
+		-ms-flex-align: center;
+		align-items: center;
+		.item_1{
+			width:33%; 
+			@media(max-width:800px){
+				width: 100%;
+				margin-bottom: 20px;
+				text-align: center;
+			}
+		}
+		.item_2{
+			width:33%; 
+			@media(max-width:800px){
+				width: 100%;
+				margin-bottom: 20px;
+			}
+		}
+		.item_3{
+			width:33%; 
+			@media(max-width:800px){
+				width: 100%;
+				text-align: center;
+			}
+		}
+		.brand{
+			color: white;
+			font-size: 22px;
+			font-weight: 700;
+			line-height: 28px;
+			@media(max-width:991px){
+				font-size: 19px;
+			}
+		}
+		.list_social{
+			display: block;
+			text-align: center;
+		}
+		.copy{
+			display: block;
+			text-align: right;
+			color:rgba(255, 255, 255, .5);
+			@media(max-width:800px){
+				text-align: center;
+			}
+		}
+	}
+}
