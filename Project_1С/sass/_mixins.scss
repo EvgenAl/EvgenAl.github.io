@@ -1,7 +1,0 @@
-@mixin Font($fontFamily, $name, $fw){
-  font-family: '$fontFamily';
-  src: url('../fonts/#{$name}.eot'),
-       url('../fonts/#{$name}.woff') format('woff'), 
-       url('../fonts/#{$name}.ttf')  format('truetype');
-  font-weight: $fw;
-}
