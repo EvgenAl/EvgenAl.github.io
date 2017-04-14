@@ -73,6 +73,7 @@ $(window).resize(function(){
 			data: th.serialize()
 		}).done(function() {
 			setTimeout(function() {
+				$('.wrap_modal, .modal_submit').fadeIn('fast');
 				th.trigger("reset");
 			}, 1000);
 		});
@@ -88,6 +89,7 @@ $(window).resize(function(){
 			url: "mail_block.php", 
 			data: th.serialize()
 		}).done(function() {
+			$('.wrap_modal, .modal_submit').fadeIn('fast');
 			setTimeout(function() {
 				th.trigger("reset");
 			}, 1000);
@@ -104,6 +106,7 @@ $(window).resize(function(){
 			url: "mail_bottom.php", 
 			data: th.serialize()
 		}).done(function() {
+			$('.wrap_modal, .modal_submit').fadeIn('fast');
 			setTimeout(function() {
 				th.trigger("reset");
 			}, 1000);
@@ -120,14 +123,27 @@ $(window).resize(function(){
 			url: "mail_modal.php",
 			data: th.serialize()
 		}).done(function() {
+			$('.modal_form').fadeOut('fast');
+			$('.wrap_modal, .modal_submit').fadeIn('fast');
+		});
+		return false;
+	});
+
+
+	$("#form_WeDo").submit(function() { 
+		var th = $(this);
+		$.ajax({
+			type: "POST",
+			url: "mail_projects.php",
+			data: th.serialize()
+		}).done(function() {
+			$('.wrap_modal, .modal_submit').fadeIn('fast');
 			setTimeout(function() {
 				th.trigger("reset");
 			}, 1000);
 		});
 		return false;
 	});
-
-
 
 	/*sliders*/
 
@@ -261,7 +277,9 @@ $('.wrap_modal, .close').click(function(){
 	$('.wrap_modal, .modal_form').fadeOut('fast');
 });
 
-
+$('.btn_close').click(function(){
+	$('.wrap_modal, .modal_submit').fadeOut('fast');
+})
 
 $('.button_slick').click(function(){
 	$('.wrap_modal, .info_block').fadeIn('fast');
@@ -279,9 +297,9 @@ $('.item_popup').magnificPopup({
 	type: 'image',
 	removalDelay: 300,
 	mainClass: 'mfp-fade',
-	 gallery:{
-    enabled:true
-  }
+	gallery:{
+		enabled:true
+	}
 });
 
 

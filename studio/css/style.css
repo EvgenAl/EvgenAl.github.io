@@ -6725,6 +6725,52 @@ input[type=text], input[type=email] {
   }
 }
 
+.slick {
+  width: 260px;
+  height: 61px;
+  position: fixed;
+  bottom: 30px;
+  right: 5%;
+  z-index: 500;
+}
+
+@media (max-width: 1199px) {
+  .slick {
+    bottom: -30%;
+  }
+}
+
+@media (max-width: 991px) {
+  .slick {
+    bottom: -33%;
+  }
+}
+
+@media (max-width: 700px) {
+  .slick {
+    display: none;
+  }
+}
+
+.slick .button_slick {
+  background: #fefafa;
+  padding: 16px 10px;
+  color: #be4b4b;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  border: 3px solid #d56161;
+  border-radius: 5px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+
+.slick .button_slick img {
+  display: inline-block;
+  margin-left: 8px;
+  position: relative;
+  top: -3px;
+}
+
 /*=====================menu toggle===============================*/
 .menu_toggle {
   display: none;
@@ -7672,57 +7718,6 @@ input[type=text], input[type=email] {
   background: #d32f2f;
 }
 
-.we_dev .wrapper_slick {
-  position: relative;
-}
-
-.we_dev .wrapper_slick .slick {
-  width: 260px;
-  height: 61px;
-  position: absolute;
-  bottom: -33%;
-  right: 0;
-  z-index: 500;
-  display: none;
-}
-
-@media (max-width: 1199px) {
-  .we_dev .wrapper_slick .slick {
-    bottom: -30%;
-  }
-}
-
-@media (max-width: 991px) {
-  .we_dev .wrapper_slick .slick {
-    bottom: -33%;
-  }
-}
-
-@media (max-width: 700px) {
-  .we_dev .wrapper_slick .slick {
-    display: none;
-  }
-}
-
-.we_dev .wrapper_slick .slick .button_slick {
-  background: #fefafa;
-  padding: 16px 10px;
-  color: #be4b4b;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 18px;
-  border: 3px solid #d56161;
-  border-radius: 5px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
-}
-
-.we_dev .wrapper_slick .slick .button_slick img {
-  display: inline-block;
-  margin-left: 8px;
-  position: relative;
-  top: -3px;
-}
-
 .form_block {
   background: url(../img/bg_3.png) no-repeat center center;
   background-size: cover;
@@ -8294,7 +8289,7 @@ input[type=text], input[type=email] {
   font-size: 27px;
   font-weight: 400;
   line-height: 40px;
-  min-height: 210px;
+  min-height: 240px;
 }
 
 @media (max-width: 767px) {
@@ -8428,7 +8423,7 @@ input[type=text], input[type=email] {
 .packets .item .price {
   color: white;
   font-family: Roboto;
-  font-size: 27px;
+  font-size: 23px;
   font-weight: 900;
   line-height: 160px;
   position: absolute;
@@ -9405,6 +9400,56 @@ input[type=text], input[type=email] {
 
 .modal_form .form .button_modal:hover {
   background: #373636;
+}
+
+.modal_submit {
+  z-index: 1100;
+  width: 380px;
+  border-radius: 4px;
+  height: auto;
+  background: #fff;
+  height: 200px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-top: -100px;
+  margin-left: -190px;
+  text-align: center;
+  padding: 20px 25px;
+  text-align: center;
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .modal_submit {
+    width: 90%;
+    margin-left: -45%;
+    padding: 20px 10px;
+    height: 230px;
+  }
+}
+
+.modal_submit .message {
+  color: #3d3d3d;
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 36px;
+}
+
+.modal_submit .btn_close {
+  color: #f9f9f9;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 12px 25px;
+  background-color: #be4b4b;
+  border-radius: 5px;
+  text-align: center;
+  border: none;
+  width: 180px;
+  display: inline-block;
 }
 
 .info_block {
