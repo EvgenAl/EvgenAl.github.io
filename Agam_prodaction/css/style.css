@@ -95,7 +95,8 @@ h3 {
   font-weight: 700;
   line-height: 27px;
   text-transform: uppercase;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  letter-spacing: 2px; }
 
 h4 {
   color: #232222;
@@ -179,26 +180,28 @@ input[type=text], input[type=email] {
     .contacts {
       text-align: center;
       margin-top: 40px; } }
-  .contacts .phone .phones {
-    color: white;
-    font-size: 22px;
-    font-weight: 700;
-    line-height: 37px; }
-    @media screen and (max-width: 1200px) {
-      .contacts .phone .phones {
-        font-size: 18px;
-        line-height: 25px; } }
-    @media screen and (max-width: 1199px) {
-      .contacts .phone .phones {
-        font-size: 16px;
-        line-height: 22px; } }
-    .contacts .phone .phones .fa {
-      color: #d94141;
-      margin-right: 10px;
-      font-size: 26px;
-      display: inline-block;
-      position: relative;
-      top: 3px; }
+  .contacts .phone {
+    margin-bottom: 5px; }
+    .contacts .phone .phones {
+      color: white;
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 37px; }
+      @media screen and (max-width: 1200px) {
+        .contacts .phone .phones {
+          font-size: 18px;
+          line-height: 25px; } }
+      @media screen and (max-width: 1199px) {
+        .contacts .phone .phones {
+          font-size: 16px;
+          line-height: 22px; } }
+      .contacts .phone .phones .fa {
+        color: #d94141;
+        margin-right: 10px;
+        font-size: 26px;
+        display: inline-block;
+        position: relative;
+        top: 3px; }
   .contacts .mail .mail_link {
     color: white;
     font-size: 22px;
@@ -257,6 +260,7 @@ input[type=text], input[type=email] {
   display: inline-block;
   font-weight: 700;
   text-transform: uppercase;
+  letter-spacing: 2px;
   position: relative;
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
@@ -286,6 +290,10 @@ input[type=text], input[type=email] {
   animation-direction: alternate;
   -webkit-transition: .6s ease-out all;
   transition: .6s ease-out all; }
+  @media screen and (max-width: 480px) {
+    .btn, .button {
+      letter-spacing: 1px;
+      font-size: 16px; } }
   .btn:hover, .button:hover {
     background-color: #79dae0;
     background-image: -webkit-gradient(linear, right top, left top, from(#b02525), to(#fb5959));
@@ -474,10 +482,14 @@ input[type=text], input[type=email] {
       .header .slider_top .slide .text .we_tell {
         color: white;
         font-family: Geometria, sans-serif;
-        font-size: 30px;
+        font-size: 28px;
         font-weight: 700;
         line-height: 45px;
-        margin: 30px 0; }
+        margin: 30px 0;
+        text-transform: uppercase;
+        letter-spacing: 2px; }
+        .header .slider_top .slide .text .we_tell span {
+          text-transform: lowercase; }
         @media screen and (max-width: 1200px) {
           .header .slider_top .slide .text .we_tell {
             font-size: 22px; } }
@@ -513,16 +525,16 @@ input[type=text], input[type=email] {
 .you_will_receive {
   padding: 50px 0 250px 0;
   background: url(../img/bg_ellipce.png) no-repeat;
-  background-position: 0 120%;
+  background-position: 0 90%;
   background-size: contain; }
   @media screen and (max-width: 1500px) {
     .you_will_receive {
-      background-position: 0 112%;
+      background-position: 0 90%;
       background-size: contain;
       padding: 96px 0 250px 0; } }
   @media screen and (max-width: 1400px) {
     .you_will_receive {
-      background-position: 0 105%;
+      background-position: 0 90%;
       background-size: contain;
       padding: 96px 0 250px 0; } }
   @media screen and (max-width: 1200px) {
@@ -733,11 +745,11 @@ input[type=text], input[type=email] {
 .about_me {
   padding: 96px 0 300px 0;
   background: url(../img/bg_ellipce.png) no-repeat;
-  background-position: 0 130%;
+  background-position: 0 90%;
   background-size: contain; }
   @media screen and (max-width: 1500px) {
     .about_me {
-      background-position: 0 120%;
+      background-position: 0 90%;
       background-size: contain;
       padding: 96px 0 250px 0; } }
   @media screen and (max-width: 1200px) {
@@ -1035,7 +1047,7 @@ input[type=text], input[type=email] {
     -webkit-border-radius: 5px;
             border-radius: 5px;
     color: #222;
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     font-size: 14px;
     font-weight: 400;
     text-align: center;
@@ -1045,22 +1057,22 @@ input[type=text], input[type=email] {
         width: 90%; } }
     .modal_form_2 .area::-webkit-input-placeholder {
       color: #a8a8a5;
-      font-family: Roboto;
+      font-family: Roboto, sans-serif;
       font-size: 14px;
       font-weight: 400; }
     .modal_form_2 .area::-moz-placeholder {
       color: #a8a8a5;
-      font-family: Roboto;
+      font-family: Roboto, sans-serif;
       font-size: 14px;
       font-weight: 400; }
     .modal_form_2 .area:-ms-input-placeholder {
       color: #a8a8a5;
-      font-family: Roboto;
+      font-family: Roboto, sans-serif;
       font-size: 14px;
       font-weight: 400; }
     .modal_form_2 .area::placeholder {
       color: #a8a8a5;
-      font-family: Roboto;
+      font-family: Roboto, sans-serif;
       font-size: 14px;
       font-weight: 400; }
 
@@ -1089,7 +1101,7 @@ input[type=text], input[type=email] {
       height: 230px; } }
   .modal_submit .message {
     color: #3d3d3d;
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     font-size: 22px;
     font-weight: 400;
     margin-bottom: 36px; }

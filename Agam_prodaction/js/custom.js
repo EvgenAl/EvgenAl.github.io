@@ -14,7 +14,7 @@ $(function(){
 		var th = $(this);
 		$.ajax({
 			type: "POST",
-			url: "mail_1.php",
+			url: "mail.php",
 			data: th.serialize()
 		}).done(function() {
 			$('.modal_form').fadeOut('fast');
@@ -22,18 +22,7 @@ $(function(){
 		});
 		return false;
 	});
-	$("#form_modal_2").submit(function() { 
-		var th = $(this);
-		$.ajax({
-			type: "POST",
-			url: "mail_2.php",
-			data: th.serialize()
-		}).done(function() {
-			$('.modal_form').fadeOut('fast');
-			$('.wrap_modal, .modal_submit').fadeIn('fast');
-		});
-		return false;
-	});
+
 
 	/*sliders*/
 
