@@ -1,6 +1,6 @@
 <?php
 
-$recepient = "mail@fix1c.ru";
+$recepient = "evgenii_krishtopa@mail.ru";
 
 $email = trim($_POST["email"]);
 $message = "Почта: $email";

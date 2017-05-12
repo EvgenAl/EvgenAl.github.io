@@ -10,20 +10,37 @@ $(function(){
 
 
 
-	$("#form_modal").submit(function() { 
+	$(".form_modal").submit(function() { 
 		var th = $(this);
 		$.ajax({
 			type: "POST",
-			url: "mail.php",
+			url: "mail_1.php",
 			data: th.serialize()
 		}).done(function() {
-			$('.modal_form').fadeOut('fast');
-			$('.wrap_modal, .modal_submit').fadeIn('fast');
+			alert("Ваша заявка отправлена");
+			setTimeout(function() {
+				$('.wrap_modal, .modal_submit').fadeIn('fast');
+				th.trigger("reset");
+			}, 1000);
 		});
 		return false;
 	});
 
-
+	$(".form_modal_2").submit(function() { 
+		var th = $(this);
+		$.ajax({
+			type: "POST",
+			url: "mail_2.php",
+			data: th.serialize()
+		}).done(function() {
+			alert("Ваша заявка отправлена");
+			setTimeout(function() {
+				$('.wrap_modal, .modal_submit').fadeIn('fast');
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	});
 	/*sliders*/
 
 
@@ -32,7 +49,8 @@ $(function(){
 		infinite: true,
 		slidesToShow: 1,
 		arrows:false,
-		autoplay:false,
+		autoplaySpeed:2000,
+		autoplay:true,
 		dots:true,
 		fade:true,
 		adaptiveHeight:true
@@ -116,9 +134,6 @@ $('.serf').magnificPopup({
 
 });
 
-$(window, document).load(function(){
-	$(".loader_wrap, .loader").delay(500).fadeOut(3000);
-});
 
 
 
