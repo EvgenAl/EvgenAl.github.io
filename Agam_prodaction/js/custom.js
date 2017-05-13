@@ -41,6 +41,22 @@ $(function(){
 		});
 		return false;
 	});
+
+		$(".form_modal_3").submit(function() { 
+		var th = $(this);
+		$.ajax({
+			type: "POST",
+			url: "mail_3.php",
+			data: th.serialize()
+		}).done(function() {
+			alert("Ваша заявка отправлена");
+			setTimeout(function() {
+				$('.wrap_modal, .modal_submit').fadeIn('fast');
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	});
 	/*sliders*/
 
 
@@ -108,8 +124,13 @@ $('.modal_btn_2').click(function(){
 });
 
 
+$('.modal_btn_3').click(function(){
+	$('.wrap_modal, .modal_form_3').fadeIn('fast');
+});
+
+
 $('.wrap_modal, .close').click(function(){
-	$('.wrap_modal, .modal_form, .modal_form_2').fadeOut('fast');
+	$('.wrap_modal, .modal_form, .modal_form_2, .modal_form_3').fadeOut('fast');
 });
 
 
