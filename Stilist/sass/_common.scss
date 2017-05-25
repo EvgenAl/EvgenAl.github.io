@@ -1,0 +1,151 @@
+/*=====================COMMON STYLES======================*/
+html{
+  overflow-y: scroll;
+  overflow-x: auto;
+}
+
+body{
+	margin:0;
+	min-width: 320px;
+	overflow-x:hidden; 
+	font-family: HelveticaNeueCyr, sans-serif;
+	padding-right: 0 !important;
+}
+
+section{
+	position: relative;
+}
+
+
+ul{
+	padding: 0;
+	margin: 0;
+}
+
+ul, ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+p{
+	margin: 0;
+	padding: 0;
+}
+
+a{
+	text-decoration: none;
+	&:hover, &:active, &:focus {
+		text-decoration: none;
+	}
+}
+
+.cliarfix:before,
+.cliarfix:after {
+	content: "";
+	display: table;
+}
+
+.cliarfix:after {
+	clear: both;
+}
+
+.cliarfix {
+	clear: both;
+}
+
+.img_responsive{
+	width:100%;
+	height: auto;
+}
+
+button, 
+button:active, 
+button:focus,
+input:focus,
+select:focus,
+select:active {
+	outline: none;
+}
+
+.sticky{
+	width: 100%;
+	background: #8f5d2e!important;
+	border-radius:0;
+}
+/*==============================INFO CONTACT=========================*/
+
+
+@media (max-width: 991px) {
+	.navbar-header {
+		float: none;
+	}
+	.navbar-toggle {
+		display: block;
+	}
+	.navbar-collapse {
+		border-top: 1px solid transparent;
+		-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+		box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+	}
+	.navbar-collapse.collapse {
+		display: none!important;
+	}
+	.navbar-nav {
+		float: none!important;
+		margin: 7.5px -15px;
+	}
+	.navbar-nav>li {
+		float: none;
+	}
+	.navbar-nav>li>a {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.navbar-text {
+		float: none;
+		margin: 15px 0;
+	}
+	/* since 3.1.0 */
+	.navbar-collapse.collapse.in { 
+		display: block!important;
+	}
+	.collapsing {
+		overflow: hidden!important;
+	}
+}
+
+/*---------------------------------------------------------*/
+
+.scroll{
+	position: fixed;
+	right: 20px;
+	top:90%;
+	cursor: pointer;
+	display: none;
+	width: 50px;
+	height: 50px;
+	border-radius:50px;
+	background:#222;
+	z-index: 999;
+}
+
+.scroll .arrow{
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	left: 50%;
+	top: 30%;
+	margin-left: -15px;
+	margin-top: -15px;
+	background: transparent;
+	border-top:15px solid transparent;
+	border-left:15px solid transparent;
+	border-bottom:15px solid #5cd4df;
+	border-right:15px solid transparent;
+}
+
