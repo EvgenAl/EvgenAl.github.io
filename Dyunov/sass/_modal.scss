@@ -1,0 +1,18 @@
+.modal{
+	h4{
+		color: #89472d;
+		font-family: Roboto, sans-serif;
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 32px;
+		text-transform: uppercase;
+		text-align: center;
+		@media screen and (max-width:767px){
+		font-size: 22px;
+		line-height: 26px;
+	}
+	}
+	.modal-footer{
+		text-align: center;
+	}
+}
