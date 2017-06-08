@@ -5149,6 +5149,7 @@ img.mfp-img {
 body {
   margin: 0;
   min-width: 320px;
+  overflow-x: hidden;
   font-family: 'Raleway', sans-serif; }
 
 section {
@@ -5736,6 +5737,9 @@ a:hover, a:active, a:focus {
       .about .row_second .about_motor .text {
         margin-bottom: 30px;
         text-align: justify; }
+        @media screen and (max-width: 767px) {
+          .about .row_second .about_motor .text {
+            text-align: left; } }
     .about .row_second .photo_block {
       position: relative; }
       @media screen and (max-width: 767px) {
@@ -5833,11 +5837,14 @@ a:hover, a:active, a:focus {
           line-height: 30px; } }
     .advantage .item p {
       text-align: justify; }
+      @media screen and (max-width: 767px) {
+        .advantage .item p {
+          text-align: left; } }
   .advantage .clear {
     display: none; }
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 991px) {
       .advantage .clear {
-        display: none; } }
+        display: block; } }
 
 .who {
   padding: 75px 0 50px 0;
@@ -5857,6 +5864,9 @@ a:hover, a:active, a:focus {
         width: 100%; } }
   .who .who_dmitry {
     text-align: justify; }
+    @media screen and (max-width: 767px) {
+      .who .who_dmitry {
+        text-align: left; } }
   @media screen and (max-width: 480px) {
     .who .img_block {
       text-align: center;
@@ -6095,6 +6105,9 @@ a:hover, a:active, a:focus {
           @media screen and (max-width: 991px) {
             .history .control_list .tabs_item .wrap_text .text, .history .control_list .tabs_item .wrap_text .price {
               font-size: 16px; } }
+          @media screen and (max-width: 767px) {
+            .history .control_list .tabs_item .wrap_text .text, .history .control_list .tabs_item .wrap_text .price {
+              text-align: left; } }
         .history .control_list .tabs_item .wrap_text .price {
           font-weight: 700; }
       .history .control_list .tabs_item.active {
@@ -6194,7 +6207,8 @@ a:hover, a:active, a:focus {
     @media screen and (max-width: 767px) {
       .faq .wrap_faq .block_info .answer {
         font-size: 18px;
-        line-height: 26px; } }
+        line-height: 26px;
+        text-align: left; } }
 
 .footer {
   padding: 30px 0;
