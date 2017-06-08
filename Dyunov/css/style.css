@@ -5149,7 +5149,6 @@ img.mfp-img {
 body {
   margin: 0;
   min-width: 320px;
-  overflow-x: hidden;
   font-family: 'Raleway', sans-serif; }
 
 section {
@@ -5361,6 +5360,9 @@ a:hover, a:active, a:focus {
   -webkit-transition: .5s ease-out all;
   -o-transition: .5s ease-out all;
   transition: .5s ease-out all; }
+  @media screen and (max-width: 991px) {
+    .wrap_animate_img {
+      display: none; } }
 
 @-webkit-keyframes hover {
   0% {
@@ -5607,8 +5609,7 @@ a:hover, a:active, a:focus {
   padding: 100px 0;
   background: url(../img/bg_1.png) no-repeat;
   background-size: 104% 100%;
-  background-position: -90px 5px;
-  background-attachment: fixed; }
+  background-position: -90px 5px; }
   @media screen and (max-width: 1400px) {
     .about {
       background-position: -60px 5px; } }
@@ -5729,8 +5730,12 @@ a:hover, a:active, a:focus {
         padding-top: 60px; } }
     .about .row_second .about_motor {
       padding-right: 40px; }
+      @media screen and (max-width: 767px) {
+        .about .row_second .about_motor {
+          padding-right: 15px; } }
       .about .row_second .about_motor .text {
-        margin-bottom: 30px; }
+        margin-bottom: 30px;
+        text-align: justify; }
     .about .row_second .photo_block {
       position: relative; }
       @media screen and (max-width: 767px) {
@@ -5784,7 +5789,8 @@ a:hover, a:active, a:focus {
 .advantage {
   padding: 95px 0 0 0;
   background: url(../img/bg_2.png) no-repeat center;
-  background-size: contain; }
+  background-size: contain;
+  overflow: hidden; }
   @media screen and (max-width: 1200px) {
     .advantage {
       background: none; } }
@@ -5825,6 +5831,8 @@ a:hover, a:active, a:focus {
         .advantage .item h3 {
           font-size: 22px;
           line-height: 30px; } }
+    .advantage .item p {
+      text-align: justify; }
   .advantage .clear {
     display: none; }
     @media screen and (max-width: 1200px) {
@@ -5834,7 +5842,7 @@ a:hover, a:active, a:focus {
 .who {
   padding: 75px 0 50px 0;
   background: url(../img/bg_3.png) no-repeat center;
-  background-size: 100% 100%; }
+  background-size: 105% 100%; }
   @media screen and (max-width: 1200px) {
     .who {
       background: none;
@@ -5847,6 +5855,8 @@ a:hover, a:active, a:focus {
     @media screen and (max-width: 480px) {
       .who .who_dmitry, .who .img_block {
         width: 100%; } }
+  .who .who_dmitry {
+    text-align: justify; }
   @media screen and (max-width: 480px) {
     .who .img_block {
       text-align: center;
@@ -6068,20 +6078,25 @@ a:hover, a:active, a:focus {
         @media screen and (max-width: 620px) {
           .history .control_list .tabs_item .wrap_text {
             display: block;
-            width: 100%; } }
-        .history .control_list .tabs_item .wrap_text .text {
+            width: 100%;
+            padding-left: 10px;
+            padding-right: 10px; } }
+        .history .control_list .tabs_item .wrap_text .text, .history .control_list .tabs_item .wrap_text .price {
           color: #262525;
           font-weight: 400;
           font-size: 20px;
           line-height: 30px;
-          padding-bottom: 20px; }
+          padding-bottom: 20px;
+          text-align: justify; }
           @media screen and (max-width: 1200px) {
-            .history .control_list .tabs_item .wrap_text .text {
+            .history .control_list .tabs_item .wrap_text .text, .history .control_list .tabs_item .wrap_text .price {
               font-size: 18px;
               line-height: 26px; } }
           @media screen and (max-width: 991px) {
-            .history .control_list .tabs_item .wrap_text .text {
+            .history .control_list .tabs_item .wrap_text .text, .history .control_list .tabs_item .wrap_text .price {
               font-size: 16px; } }
+        .history .control_list .tabs_item .wrap_text .price {
+          font-weight: 700; }
       .history .control_list .tabs_item.active {
         display: block; }
 
@@ -6132,7 +6147,8 @@ a:hover, a:active, a:focus {
         line-height: 26px; } }
 
 .faq {
-  padding: 90px 0; }
+  padding: 90px 0;
+  overflow: hidden; }
   @media screen and (max-width: 767px) {
     .faq {
       padding: 50px 0; } }
@@ -6159,7 +6175,7 @@ a:hover, a:active, a:focus {
     font-weight: 700;
     line-height: 32px;
     text-transform: uppercase;
-    padding: 30px 0;
+    padding: 25px 0;
     border-bottom: 1px solid rgba(48, 48, 48, 0.2);
     cursor: pointer;
     background: url(../img/plus.png) no-repeat right center; }
@@ -6173,7 +6189,8 @@ a:hover, a:active, a:focus {
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
-    padding: 20px 0; }
+    padding: 20px 0;
+    text-align: justify; }
     @media screen and (max-width: 767px) {
       .faq .wrap_faq .block_info .answer {
         font-size: 18px;

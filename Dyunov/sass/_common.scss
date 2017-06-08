@@ -3,7 +3,7 @@
 body{
 	margin:0;
 	min-width: 320px;
-	overflow-x:hidden;
+
 	font-family: 'Raleway', sans-serif;
 
 }
@@ -144,7 +144,7 @@ a:hover, a:active, a:focus{
 	height: 50px;
 	border-radius:50px;
 	background:#373939;
-	z-index: 9999;
+	z-index: 1000;
 }
 
 .scroll .arrow{
@@ -254,6 +254,9 @@ a:hover, a:active, a:focus{
 	-webkit-transition:.5s ease-out all;
 	-o-transition:.5s ease-out all;
 	transition:.5s ease-out all;
+		@media screen and (max-width:991px){
+		display: none;
+	}
 }
 
 
