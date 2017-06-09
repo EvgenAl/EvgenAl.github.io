@@ -5789,6 +5789,9 @@ a:hover, a:active, a:focus {
   height: 380px;
   background: url(../img/bg_main_1.png) no-repeat center;
   background-size: cover; }
+  @media screen and (max-width: 480px) {
+    .moto {
+      display: none; } }
 
 .advantage {
   padding: 95px 0 0 0;
@@ -5801,6 +5804,9 @@ a:hover, a:active, a:focus {
   @media screen and (max-width: 991px) {
     .advantage {
       padding: 70px 0 35px 0; } }
+  @media screen and (max-width: 480px) {
+    .advantage {
+      padding-top: 0; } }
   .advantage:before {
     content: '';
     position: absolute;
@@ -5977,6 +5983,9 @@ a:hover, a:active, a:focus {
   @media screen and (max-width: 1400px) {
     .history {
       background-position: -170px 5px; } }
+  @media screen and (max-width: 1200px) {
+    .history {
+      background: none; } }
   @media screen and (max-width: 620px) {
     .history {
       padding: 60px 0; } }
@@ -5988,13 +5997,13 @@ a:hover, a:active, a:focus {
     width: 100%;
     left: 0;
     right: 0;
-    top: 38.7%;
+    top: 38.1%;
     height: 1px;
     background: #303030;
     z-index: 100; }
     @media screen and (max-width: 1200px) {
       .history:after {
-        top: 37.5%; } }
+        top: 36.7%; } }
     @media screen and (max-width: 991px) {
       .history:after {
         display: none; } }
@@ -6055,7 +6064,7 @@ a:hover, a:active, a:focus {
     padding-top: 70px; }
     .history .control_list .tabs_item {
       display: none;
-      height: 380px;
+      height: 400px;
       -webkit-transition: all ease-out .5s;
       -o-transition: all ease-out .5s;
       transition: all ease-out .5s; }
