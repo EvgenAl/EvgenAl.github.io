@@ -8034,6 +8034,9 @@ input:focus {
   .sticky li a {
     padding: 20px 30px; }
 
+.hidden_list {
+  display: none; }
+
 .header .top_header {
   padding: 20px 0; }
   .header .top_header .wrapper {
@@ -8234,8 +8237,8 @@ input:focus {
       -webkit-box-flex: 1;
       -ms-flex-positive: 1;
       flex-grow: 1;
-      -ms-flex-preferred-size: 25%;
-      flex-basis: 25%;
+      -ms-flex-preferred-size: 21%;
+      flex-basis: 21%;
       text-align: center;
       padding: 0 15px; }
       @media screen and (max-width: 991px) {
@@ -8543,7 +8546,8 @@ input:focus {
             font-style: italic;
             line-height: 36px;
             padding-left: 30px;
-            position: relative; }
+            position: relative;
+            letter-spacing: 1px; }
             @media screen and (max-width: 550px) {
               .program .item_card_3 .for_border .item .list li {
                 font-size: 16px;
@@ -8563,9 +8567,10 @@ input:focus {
           .program .item_card_3 .for_border .item .the_cost .text {
             color: #171717;
             font-family: PTSerif;
-            font-size: 22px;
+            font-size: 20px;
             font-style: italic;
-            line-height: 27px; }
+            line-height: 27px;
+            letter-spacing: 1px; }
             .program .item_card_3 .for_border .item .the_cost .text .money {
               color: #8d4a58;
               font-family: OpenSans, sans-serif;
@@ -8574,7 +8579,8 @@ input:focus {
               line-height: 27px; }
         .program .item_card_3 .for_border .item .kit_wrap {
           padding-left: 30px;
-          margin-top: 30px; }
+          margin-top: 30px;
+          cursor: pointer; }
         .program .item_card_3 .for_border .item .info {
           color: #303030;
           font-size: 15px;
@@ -8600,19 +8606,23 @@ input:focus {
             text-align: center; } }
 
 .who_we {
-  margin-top: -100px;
+  margin-top: -60px;
   padding: 200px 0 0 0;
   background: url(../i/girls.png) no-repeat;
   background-position: 46% 46%;
-  background-size: 40% 50%; }
+  background-size: 34% 50%; }
   @media screen and (max-width: 1600px) {
     .who_we {
       background-position: 46% 46%;
-      background-size: 40% 45%; } }
+      background-size: 43% 45%; } }
   @media screen and (max-width: 1400px) {
     .who_we {
       background-position: 46% 46%;
-      background-size: 44% 44%; } }
+      background-size: 47% 44%; } }
+  @media screen and (max-width: 1300px) {
+    .who_we {
+      background-position: 46% 46%;
+      background-size: 50% 44%; } }
   @media screen and (max-width: 1200px) {
     .who_we {
       background: none; } }
