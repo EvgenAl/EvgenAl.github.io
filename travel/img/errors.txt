@@ -1,0 +1,6 @@
+[Wed May 03 2017 11:50:44 GMT+0300 (Финляндия (лето))] layer "+7 495 003 34 29 +7 906 058 84 82  what’s up/telegram/viber": Expected Either a default asset specification or a layer asset specification but "+" found.
+[Wed May 03 2017 11:50:44 GMT+0300 (Финляндия (лето))] layer "50+": Expected end of input but "+" found.
+[Wed May 03 2017 11:50:44 GMT+0300 (Финляндия (лето))] layer "100+": Expected end of input but "+" found.
+[Wed May 03 2017 11:50:44 GMT+0300 (Финляндия (лето))] layer "+7 495 003 34 29": Expected Either a default asset specification or a layer asset specification but "+" found.
+[Wed May 03 2017 11:50:44 GMT+0300 (Финляндия (лето))] layer "Знакомьтесь с уникальными местами в команде единомышленников,  ": Expected end of input but "," found.
+[Wed May 03 2017 11:50:44 GMT+0300 (Финляндия (лето))] layer "go@helloworld.com.ru": Unsupported extension: ru

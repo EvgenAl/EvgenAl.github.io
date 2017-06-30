@@ -1,0 +1,425 @@
+/*=====================COMMON STYLES======================*/
+
+body{
+	margin:0;
+	min-width: 320px;
+	font-family: 'Geometria', sans-serif;
+	overflow-x:hidden; 
+}
+
+section{
+	position: relative;
+}
+
+
+ul{
+	padding: 0;
+	margin: 0;
+}
+
+ul, ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+h2{
+	text-align: center;
+	color: #373939;
+	margin-bottom: 50px;
+	font-size: 35px;
+	font-weight: 700;
+	line-height: 37px;
+	text-transform: uppercase;
+	padding-bottom: 20px;
+	position: relative;
+	letter-spacing:2px;
+	&:after{
+		content:'';
+		position: absolute;
+		width: 272px;
+		height: 14px;
+		background: url(../img/bg_title.png) no-repeat;
+		left: 50%;
+		bottom: 0;
+		margin-left: - 136px;
+		@media screen and (max-width:550px){
+			display: none;
+		}
+	}
+	@media screen and (max-width:991px){
+		font-size: 30px;
+		margin-bottom: 40px;
+	}
+
+	@media screen and (max-width:550px){
+		font-size: 25px;
+		margin-bottom: 40px;
+	}
+}
+
+
+p{
+	margin: 0;
+	padding: 0;
+}
+
+a{
+	text-decoration: none;
+	color:#fff;
+	&:hover{
+		text-decoration: none;
+		color:#fff;
+	}
+}
+
+.cliarfix:before,
+.cliarfix:after {
+	content: "";
+	display: table;
+}
+
+.cliarfix:after {
+	clear: both;
+}
+
+.cliarfix {
+	clear: both;
+}
+
+.img_responsive{
+	width:100%;
+	height: auto;
+}
+
+button, 
+button:active, 
+button:focus,
+input:focus,
+select:focus,
+select:active {
+	outline: none;
+}
+
+.btn, .button{
+	color: #2f2e2e;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 22px;
+	display: inline-block;
+	padding: 12px 18px;
+	text-transform: uppercase;
+	background-color: #f1d90f;
+	background-image: -webkit-gradient(linear, left bottom, left top, from(#f1d90f), to(#eddf69));
+	background-image: -webkit-linear-gradient(bottom, #f1d90f 0%, #eddf69 100%);
+	background-image: -o-linear-gradient(bottom, #f1d90f 0%, #eddf69 100%);
+	background-image: linear-gradient(to top, #f1d90f 0%, #eddf69 100%);
+	border: 1px solid #f2e686;
+	border-radius: 22px;
+	-webkit-box-shadow: 1.5px 2.6px 0 rgba(106, 95, 6, 0.7);
+	        box-shadow: 1.5px 2.6px 0 rgba(106, 95, 6, 0.7);
+	@media screen and (max-width:550px){
+		font-size: 14px;
+	}
+	@media screen and (max-width:550px){
+		font-size: 12px;
+	}
+}
+
+/*==============================INFO CONTACT=========================*/
+
+.info_contact_2{
+	display: none;
+	@media screen and (max-width:991px){		
+		position: fixed;
+		width: 240px;
+		height: 200px;
+		left: 50%;
+		top: 50%;
+		margin-top: -100px;
+		margin-left: -120px;
+		background: #fff;	
+		border-radius:5px;
+		color:#373939;
+	}
+	.contacts{
+		text-align: center;
+		padding-top: 20px;
+		.mail a, .phone a, .request_a_call button{
+			@media screen and (max-width:991px){
+				color:#373939;
+				border-color:#373939;
+			}
+		}
+		.mail{		
+			@media screen and (max-width:991px){
+				font-size: 18px;
+				font-weight: 400;
+				line-height: 27px;
+				margin-bottom: 15px;
+				margin-top: 20px;
+			}
+			.fa{
+				display: inline-block;
+				margin-right: 5px;
+			}
+		}
+		.phone{
+			font-size: 20px;
+			font-weight: 400;
+			line-height: 27px;
+			text-transform: uppercase;
+		}
+		.request_a_call{
+			margin-top: 20px;
+			.request{
+				background: transparent;
+				color: #373939;
+				font-size: 14px;
+				font-weight: 500;
+				line-height: 16px;
+				border: 1px dashed #373939;
+				border-radius: 18px;
+				padding: 12px 15px;
+			}
+		}
+	}
+}
+
+
+/*=============================SCROLLTOP=============================*/
+
+
+.scroll{
+	position: fixed;
+	right: 20px;
+	top:90%;
+	cursor: pointer;
+	display: none;
+	width: 50px;
+	height: 50px;
+	border-radius:50px;
+	background:#373939;
+	z-index: 9999;
+}
+
+.scroll .arrow{
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	left: 50%;
+	top: 30%;
+	margin-left: -15px;
+	margin-top: -15px;
+	background: transparent;
+	border-top:15px solid transparent;
+	border-left:15px solid transparent;
+	border-bottom:15px solid #74baed;
+	border-right:15px solid transparent;
+}
+
+
+/*================================BUTTON=======================================*/
+
+
+.btn_mnu {
+	width: 50px;
+	height: 40px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	        flex-direction: column;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	-webkit-box-align: center;
+	        align-items: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	-webkit-box-pack: center;
+	        justify-content: center;
+	cursor: pointer;
+	position: relative;
+	border-radius:5px;
+	@media(max-width:480px){
+		width: 100%;
+		height: 35px;
+	}
+}
+.btn_row {
+	height: 2px;
+	width: 60%;
+	margin: 2px 0;
+	background-color: #fff;
+	position: relative;
+	-webkit-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+}
+.btn_mnu.active .btn_row:first-child {
+	-webkit-transform: rotate(-135deg);
+	-ms-transform: rotate(-135deg);
+	transform: rotate(-135deg);
+	top: 6px;
+}
+.btn_mnu.active .btn_row:last-child {
+	-webkit-transform: rotate(-225deg);
+	-ms-transform: rotate(-225deg);
+	transform: rotate(-225deg);
+	top: -6px;
+}
+.btn_mnu.active .btn_row:nth-child(2) {
+	opacity: 0;
+}
+
+
+/*======================LOADER==============================*/
+
+.loader_wrapper{
+	position: fixed;
+	z-index: 999;
+	opacity:1;
+	background: #fff;
+	width: 100%;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+
+
+.loader{
+	z-index: 9999;
+	width:100px;
+	height:100px;
+	border-radius:100%;
+	position:fixed;
+	border: 1px solid #ecd50f;
+	-webkit-animation: up 1s;
+	animation: up 1s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-transition:2s;
+	-o-transition:2s;
+	transition:2s;
+	border-bottom:none;
+	border-right:none;
+	-webkit-animation-timing-function:linear;
+	animation-timing-function:linear;
+	margin-left: -70px;
+	margin-top: -70px;
+	left:50%;
+	top:50%;
+
+}
+
+@-webkit-keyframes up{
+	from{-webkit-transform:rotate(0deg);transform:rotate(0deg); }
+	50%{-webkit-transform:rotate(180deg);transform:rotate(180deg);}
+	100%{-webkit-transform:rotate(360deg);transform:rotate(360deg);}
+}
+
+@keyframes up{
+	from{-webkit-transform:rotate(0deg);transform:rotate(0deg); }
+	50%{-webkit-transform:rotate(180deg);transform:rotate(180deg);}
+	100%{-webkit-transform:rotate(360deg);transform:rotate(360deg);}
+}
+#img2{
+	width:90px;
+	height:90px;
+	left:50.35%;
+	top:50.7%;
+	-webkit-animation-delay:.2s;
+	animation-delay:.2s;
+
+}
+#img3{
+	width:80px;
+	height:80px;
+	left:50.70%;
+	top:51.4%;
+	-webkit-animation-delay:.4s;
+	animation-delay:.4s;
+}
+#img4{
+	width:70px;
+	height:70px;
+	left:51.05%;
+	top:52.1%;
+	-webkit-animation-delay:.6s;
+	animation-delay:.6s;
+
+}
+#img5{
+	width:60px;
+	height:60px;
+	left:51.40%;
+	top:52.8%;
+	-webkit-animation-delay:.8s;
+	animation-delay:.8s;
+
+}
+
+
+/*====================BUTTON HOVER EFFECT===================*/
+
+.myButt {
+	outline:none;
+	border:none;
+	padding:20px;
+	display:block;
+	margin:50px auto;
+	cursor:pointer;
+	font-size:20px;
+	background-color:transparent;
+	position:relative;
+	border:2px solid #fff;
+	-webkit-transition:all 0.5s ease;
+	-o-transition:all 0.5s ease;
+	transition:all 0.5s ease;
+}
+
+
+/* ################ ONE*/
+
+.one {
+	border-color:#f8f400;
+	overflow:hidden;
+	color:#fff;
+
+	.insider {
+		background-color:#fff;
+		width:100%;
+		height:20px;
+		position:absolute;
+		left:-135px;
+		-webkit-transform:rotateZ(45deg);
+		    -ms-transform:rotate(45deg);
+		        transform:rotateZ(45deg);
+	}
+
+	&:hover {
+		background-color:#74baed!important;
+		border-color:#fff;
+		color:#fff;
+
+		.insider {
+			-webkit-transition:all 0.3s ease;
+			-o-transition:all 0.3s ease;
+			transition:all 0.3s ease;
+			left:135px;
+		}
+	}
+}
+
