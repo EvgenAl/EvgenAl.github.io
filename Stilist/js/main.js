@@ -125,23 +125,6 @@ $('.navbar').stickyNavbar({
 	});
 
 
-	/*scrollTop*/
-
-
-	$(document).scroll(function(){
-		if($(this).scrollTop() > 200){
-			$('.scroll').fadeIn('800');
-		}
-		if($(this).scrollTop() < 200){
-			$('.scroll').fadeOut('800');
-		}
-
-	});
-
-	$('.scroll').click(function(){
-		$('body,html').animate({scrollTop:0}, 'slow');
-		return false;
-	});
 
 //tooltip
 
@@ -149,7 +132,29 @@ $('.tooltipster').tooltipster({
 	side: 'bottom',
 	animation: 'fade',
 	delay: 200,
-	minWidth:320
+	minWidth:320,
+	trigger: 'click'
+});
+
+/*accordion*/
+
+
+$('.answer').hide();
+var otherContent = $('.answer'),
+duration = 500,
+nameBlock = $('.questions');
+$('.questions').click(function(){
+	var $answer = $(this).next('.answer');
+	if($answer.is(':hidden')){
+		otherContent.slideUp(duration);
+		nameBlock.removeClass('active');
+		$answer.slideDown(duration);
+		$(this).addClass('active');
+	}
+	else{
+		$answer.slideUp(duration);
+		$(this).removeClass('active');
+	}
 });
 
 
@@ -196,6 +201,8 @@ $(".phone").mask("+7 (999) 999-9999");
 
 
 
+
+
 $('.tabs_control-link').on('click', function(event){
 event.preventDefault();
 var item = $(this).closest('.tabs_control-item'),
@@ -211,6 +218,7 @@ $('.tabs_control-item').click(function(){
 	$(this).find('.future-line').addClass('active_line');
 	$(this).siblings().find('.future-line').removeClass('active_line');
 })
+
 
 
 

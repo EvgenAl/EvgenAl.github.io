@@ -1,7 +1,10 @@
 .about_master{
 	padding: 60px 0;
-	background: url(../img/bg_main_1.png) no-repeat;
+	background: url(../img/bg_main_1.png) no-repeat center;
 	background-size: cover;
+	@media screen and (max-width:650px){
+		background-position:center left;
+	}
 	.block_photo{
 		font-weight: 400;
 		line-height: 35px;
@@ -146,7 +149,7 @@
 			.btn{
 				width: 360px;
 				padding: 9px 0;
-				cursor:url(../img/cursor.png), pointer;
+				cursor:pointer;
 				color:#fff;
 				text-transform: uppercase;
 				font-size: 18px;
@@ -187,9 +190,12 @@
 .our_works{
 	padding: 30px 0;
 	min-height: 540px;
-	background: url(../img/bg_main_2.png) no-repeat;
+	background: url(../img/bg_main_2.png) no-repeat center;
 	background-size: cover;
 	/*background-attachment: fixed;*/
+	@media screen and (max-width:650px){
+		background-position:center left;
+	}
 	&:after{
 		content:'';
 		position: absolute;
@@ -317,7 +323,7 @@
 		position: relative;
 		.slide{
 			margin: 0 20px;
-			cursor:url(../img/cursor.png), pointer;
+			cursor:pointer;
 			img{
 				-webkit-box-shadow: -0.7px -0.7px 20px rgba(0, 4, 3, 0.45);
 				box-shadow: -0.7px -0.7px 20px rgba(0, 4, 3, 0.45);
@@ -357,7 +363,7 @@
 					width: 33px;
 					height: 33px;
 					top:50%;
-					cursor:url(../img/cursor.png), pointer;
+					cursor:pointer;
 					@media screen and (max-width:767px){
 						top:90%;
 
@@ -418,7 +424,12 @@
 			padding: 80px 0;
 			background: url(../img/bg_main_3.png) no-repeat;
 			background-size: cover;
-			background-attachment: fixed;
+			.my_tabs{
+				display: none;
+				@media screen and (max-width:1200px){
+					display: block;		
+				}
+			}
 			.tabs_item{
 				display: none;
 				width: 100%;
@@ -507,7 +518,7 @@
 						font-size: 25px;
 						font-weight: 400;
 						line-height: 28px;
-						cursor:url(../img/cursor.png), pointer;
+						cursor:pointer;
 						@media screen and (max-width:1200px){
 							font-size: 22px;
 						}
@@ -526,7 +537,7 @@
 
 			.text{
 				text-align: center;
-				margin-bottom: 50px;
+				margin-bottom: 80px;
 				h3{
 					color: #292929;
 					font-family: Helios, sans-serif;
@@ -556,6 +567,61 @@
 				}
 			}
 
+			.first_tabs{
+				@media screen and (max-width:1200px){
+					display: none;		
+				}
+				li{
+					display: block;
+					margin-bottom: 70px;
+					a{
+						color: #fbf9fc;
+						font-size: 25px;
+						font-weight: 400;
+						line-height: 28px;
+						padding-right: 50px;
+						background: url(../img/1.png) no-repeat;
+						background-position: 100% 0;
+						&:hover{
+							color: #89e8f0;
+						}
+					}
+					&:nth-child(2){
+						margin-left: -50px;
+					}
+					&:nth-child(3){
+						margin-left: -100px;
+					}
+					&:nth-child(4){
+						margin-left: -160px;
+					}
+					&:nth-child(5){
+					}
+					&.active_item{
+						a{
+							color: #89e8f0;
+							background: url(../img/2.png) no-repeat;
+							background-position: 100% 0;
+						}
+					}
+				}
+				.tabs_item{
+					position: relative;
+					margin-top: 90px;
+					.img_wrap{
+						position: absolute;
+						width: 175px;
+						height: 175px;
+						top:-30%;
+						left: 50%;
+						margin-left: -87.5px;
+					}
+					.text_wrap{
+						width: 100%;
+						padding-top: 40px;
+					}
+				}
+			}
 		}
 		
 		.faq{
@@ -597,6 +663,9 @@
 				margin-bottom: 50px;
 			}
 			.list_question{
+				@media screen and (max-width:991px){
+					display: none;
+				}
 				li{
 					color: #f0f0f0;
 					font-size: 17px;
@@ -606,7 +675,7 @@
 					padding-left: 40px;
 					position: relative;
 					display: inline-block;
-					cursor:url(../img/cursor.png), pointer;
+					cursor:pointer;
 					-webkit-transition:all ease-out .4s;
 					-o-transition:all ease-out .4s;
 					transition:all ease-out .4s;
@@ -627,40 +696,7 @@
 						height: 22px;
 						background: url(../img/icon_question.png) no-repeat;
 					}
-					&:first-child{
-						.my_tooltip{
-							display: none;
-						}
-					}
-					.my_tooltip{
-						display: none;
-						position: absolute;
-						left: 50%;
-						margin-left: - 240px;
-						top:140%;
-						z-index: 200;
-						width: 434px;
-						border-radius: 30px;
-						padding: 52px 25px;
-						height: 310px;
-						background:#e7e8e8 url(../img/tooltip_bg.png) no-repeat;
-						background-size: 100% 100%;
-						color: #475a5f;
-						font-family: Helios, sans-serif;
-						font-size: 13px;
-						font-weight: 400;
-						line-height: 17px;
-						&:before{
-							content:'';
-							position: absolute;
-							width: 34px;
-							height: 20px;
-							background: url(../img/triangle.png) no-repeat;
-							left: 50%;
-							margin-left: -17px;
-							top:-17px;
-						}
-					}
+
 				}
 			}
 
@@ -681,6 +717,9 @@
 				height: 20px;
 				background: rgba(57, 164, 155, .9);
 				z-index: 999;
+				@media screen and (max-width:991px){
+					display: none;
+				}
 			}
 			.Hint_title{
 				color: #373738;
@@ -701,17 +740,7 @@
 					width: 40%;
 				}
 				@media screen and (max-width:991px){
-					width: 45%;
-					left: 45%;
-				}
-				@media screen and (max-width:767px){
-					background: transparent;
-					width: 180px;
-					height: 45px;
-				}
-				@media screen and (max-width:510px){
-					left: 50%;
-					margin-left: -90px;
+					display: none;
 				}
 				h2{
 					text-align: center;
@@ -787,7 +816,7 @@
 				}
 				.btn_contact{
 					display: none;
-					cursor:url(../img/cursor.png), pointer;
+					cursor:pointer;
 					@media screen and (max-width:767px){
 						display: block;
 						padding: 10px 40px;
@@ -804,12 +833,115 @@
 		}
 
 
+		.contact_hidden{
+			.wrap_info_bottom{
+				display: none;
+				@media screen and (max-width:991px){
+					display: block;
+					background: rgba(57, 164, 155, 1);
+					padding: 20px 0;
+				}
+				h2{
+					text-align: center;
+					padding-bottom: 10px;
+					margin-bottom: 15px;
+					border-bottom:1px solid #fff;
+					color: white;
+					font-family: Helios, sans-serif;
+					font-size: 33px;
+					font-weight: 400;
+					line-height: 36px;
+				}
+				.list_contacts{
+					display:-webkit-box;
+					display:-webkit-flex;
+					display:-ms-flexbox;
+					display:flex;
+					-webkit-box-pack: center;
+					-webkit-justify-content: center;
+					-ms-flex-pack: center;
+					justify-content: center;
+					-webkit-flex-wrap:wrap;
+					-ms-flex-wrap:wrap;
+					flex-wrap:wrap;
+				}
+				li{
+					margin-bottom: 25px;
+					color: white;
+					text-align: center;
+					font-family: Helios, sans-serif;
+					font-size: 18px;
+					-webkit-box-flex:1;
+					-webkit-flex-grow:1;
+					-ms-flex-positive:1;
+					flex-grow:1;
+					-webkit-flex-basis:100%;
+					-ms-flex-preferred-size:100%;
+					flex-basis:100%;
+					font-weight: 400;
+					position: relative;
+					@media screen and (max-width:1200px){
+						font-size: 16px;
+					}
+					a{
+						color: white;
+					}
+					&:last-child{
+						bottom: 0;
+					}
+					img, span{
+						display: inline-block;
+						vertical-align: middle;
+					}
+					img{
+						margin-right: 20px;
+					}
+				}
+
+			}
+		}
 		.tehnology{
 			.futures-tabs {
 				margin-top: 70px;
 				text-align: center
 			}
 
+		}
 
+		.accordion{
+			display: none;
+			@media screen and (max-width:991px){
+				display: block;
 
+			}
+		}
+		.block_info{
+			padding: 27px 0;
+			border-bottom:1px solid #fff;
+			.questions{
+				color: white;
+				font-size: 18px;
+				cursor:pointer;
+				background: url(../img/plus.png) no-repeat 0 0;
+				background-position:100% center;
+				padding-right: 30px;
+				@media screen and (max-width:767px){
+					font-size: 16px;
+					padding-right: 30px;
+				}
+			}
+			.active{
+				background: url(../img/minus.png) no-repeat 0 0;
+				background-position:100% center;
+			}
+			.answer{
+				color: white;
+				font-size: 20px;
+				font-weight: 400;
+				line-height: 22px;
+				margin-top: 30px;
+				@media screen and (max-width:767px){
+					font-size: 16px;
+				}
+			}
 		}

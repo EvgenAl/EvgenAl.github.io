@@ -1,9 +1,12 @@
 .header{
-	background: url(../img/header_bg.png) no-repeat;
+	background: url(../img/header_bg.png) no-repeat center;
 	background-size: cover;
 	position: relative;
 	@media screen and (max-width:991px){
 		background-attachment: fixed;
+	}
+	@media screen and (max-width:650px){
+		background-position:center left;
 	}
 	.navbar-default{
 		background: rgba(0, 0, 0, .2);
@@ -34,7 +37,7 @@
 					-webkit-transition:ease .4s all;
 					-o-transition:ease .4s all;
 					transition:ease .4s all;
-					cursor:url(../img/cursor.png), pointer;
+					cursor:pointer;
 					position: relative;
 					@media screen and (max-width:1200px){
 						padding-left: 10px;
@@ -138,7 +141,7 @@
 				text-transform: uppercase;
 				font-size: 18px;
 				font-weight: 500;
-				cursor:url(../img/cursor.png), pointer;
+				cursor:pointer;
 				-webkit-transition: all ease-out .6s;
 				-o-transition: all ease-out .6s;
 				transition: all ease-out .6s;

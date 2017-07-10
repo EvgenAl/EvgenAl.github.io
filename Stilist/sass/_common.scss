@@ -74,7 +74,7 @@ select:active {
 
 .sticky{
 	width: 100%;
-	background: #8f5d2e!important;
+	background: #014044!important;
 	border-radius:0;
 }
 /*==============================INFO CONTACT=========================*/
@@ -119,33 +119,6 @@ select:active {
 	}
 }
 
-/*---------------------------------------------------------*/
 
-.scroll{
-	position: fixed;
-	right: 20px;
-	top:90%;
-	cursor: pointer;
-	display: none;
-	width: 50px;
-	height: 50px;
-	border-radius:50px;
-	background:#222;
-	z-index: 999;
-}
 
-.scroll .arrow{
-	position: absolute;
-	width: 30px;
-	height: 30px;
-	left: 50%;
-	top: 30%;
-	margin-left: -15px;
-	margin-top: -15px;
-	background: transparent;
-	border-top:15px solid transparent;
-	border-left:15px solid transparent;
-	border-bottom:15px solid #5cd4df;
-	border-right:15px solid transparent;
-}
 
