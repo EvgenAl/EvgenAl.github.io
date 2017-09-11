@@ -10,7 +10,7 @@
 	<meta http-equiv="cleartype" content="on">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<title>Arcont | Главная</title>
+	<title>Arkont | Главная</title>
 	<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i" rel="stylesheet"> 
 	<link rel="stylesheet" href="css/style.css">
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -20,13 +20,13 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
       <![endif]-->
     </head>
-    <body>
+    <body class='main_page'>
     	<header>
-    		<div class="top_header">
+    		<div class="top_header sticky main_header">
     			<div class="container">
     				<div class="row">
     					<div class="logo col-xs-3  col-md-offset-0 col-md-6">
-    						<a href="https://evgenal.github.io/Arcont/" class="brand">
+    						<a href="main.html" class="brand">
     							<img src="i/logo.png" alt="">
     						</a>
     					</div>
@@ -54,12 +54,12 @@
     	<main class="main">
     		<div class="container">
     			<div class="row">
-    				<div class="col-md-12 col-lg-6 item">
+    				<div class="col-md-12 col-lg-6 item item_slider">
     					<div class="slider_main">
     						<div class="slide">
     							<img src="i/main/slide_1.png" alt="" class="img-responsive">
     							<a href="projects.html" class="overlay">
-    								<span class="text">
+    								<span class="text text_projects">
     									Проекты
     								</span>
     							</a>
@@ -67,7 +67,7 @@
     						<div class="slide">
     							<img src="i/main/slide_2.png" alt="" class="img-responsive">
     							<a href="projects.html" class="overlay">
-    								<span class="text">
+    								<span class="text text_projects">
     									Проекты
     								</span>
     							</a>
@@ -75,7 +75,7 @@
     						<div class="slide">
     							<img src="i/main/slide_3.png" alt="" class="img-responsive">
     							<a href="projects.html" class="overlay">
-    								<span class="text">
+    								<span class="text text_projects">
     									Проекты
     								</span>
     							</a>
@@ -83,7 +83,7 @@
     						<div class="slide">
     							<img src="i/main/slide_4.png" alt="" class="img-responsive">
     							<a href="projects.html" class="overlay">
-    								<span class="text">
+    								<span class="text text_projects">
     									Проекты
     								</span>
     							</a>
@@ -91,7 +91,7 @@
     						<div class="slide">
     							<img src="i/main/slide_5.png" alt="" class="img-responsive">
     							<a href="projects.html" class="overlay">
-    								<span class="text">
+    								<span class="text text_projects">
     									Проекты
     								</span>
     							</a>
@@ -99,7 +99,7 @@
     						<div class="slide">
     							<img src="i/main/slide_6.png" alt="" class="img-responsive">
     							<a href="projects.html" class="overlay">
-    								<span class="text">
+    								<span class="text text_projects">
     									Проекты
     								</span>
     							</a>
@@ -107,7 +107,7 @@
     						<div class="slide">
     							<img src="i/main/slide_7.png" alt="" class="img-responsive">
     							<a href="projects.html" class="overlay">
-    								<span class="text">
+    								<span class="text text_projects">
     									Проекты
     								</span>
     							</a>
@@ -115,31 +115,31 @@
     						<div class="slide">
     							<img src="i/main/slide_8.png" alt="" class="img-responsive">
     							<a href="projects.html" class="overlay">
-    								<span class="text">
+    								<span class="text text_projects">
     									Проекты
     								</span>
     							</a>
     						</div>
     					</div>
     				</div>
-    				<div class="col-md-12 col-lg-6 item">
+    				<div class="col-md-12 col-lg-6 item_picture">
     					<div class="row">
     						<div class="top_image services">
     							<img src="i/main/image_1.png" alt="" class='img-responsive images'>
     							<a class="overlay" href="services.html">
-    								<span class="text">Деятельность</span>
+    								<span class="text text_services">Деятельность</span>
     							</a>
     						</div>
     						<div class="about_company">
     							<img src="i/main/image_2.png" alt="" class='img-responsive images'>
     							<a class="overlay" href="about.html">
-    								<span  class="text">О компании</span>
+    								<span  class="text text_about">О компании</span>
     							</a>
     						</div>
     						<div class="contacts">
     							<img src="i/main/image_3.png" alt="" class='img-responsive images'>
     							<a class="overlay" href="contact.html">
-    								<span class="text">Контакты</span>
+    								<span class="text text_contacts">Контакты</span>
     							</a>
     						</div>
     					</div>
@@ -148,7 +148,7 @@
     		</div>
     	</main>
 
-    	<footer class="footer">
+    	<footer class="footer main_footer">
     		<div class="container">
     			<div class="row">
     				<div class="col-sm-12 col-md-3 item">
@@ -157,7 +157,12 @@
     					</div>
     				</div>
     				<div class="col-sm-12 col-md-6 item center_item">
-    					Россия, 115114, г. Москва, Шлюзовая набережная, д.6, стр.4  
+    					Россия, 115114, г. Москва, Шлюзовая набережная, д.6, стр.4
+    					<div class="info">
+    						<a href="tel:(499)787-71-05">(499)787-71-05</a>,
+    						<a href="tel:(499)787-72-11">(499)787-72-11</a>, 
+    						<a href="tel:(499)787-72-38">(499)787-72-38</a> 	
+    					</div>	
     				</div>
     				<div class="col-sm-12 col-md-3 item">
     					<div class="write_us" data-toggle="modal" data-target="#myModal">
@@ -170,7 +175,7 @@
 
     	<!--modal-->
 
-    	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    	<div class="modal fade contact_form_modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     		<div class="modal-dialog" role="document">
     			<div class="modal-content">
     				<div class="modal-header">
@@ -191,8 +196,6 @@
     		</div>
     	</div>
     	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    	<script src='https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.0/masonry.pkgd.min.js'></script>
-    	<script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.js"></script>
     	<script src="js/main.js"></script>
 
 
